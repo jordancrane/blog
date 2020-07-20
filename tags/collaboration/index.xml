@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>collaboration on Blog</title>
+    <link>https://blog.jordancrane.me/tags/collaboration/</link>
+    <description>Recent content in collaboration on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Jul 2020 20:44:28 -0700</lastBuildDate>
+    
+	<atom:link href="https://blog.jordancrane.me/tags/collaboration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Better Than Zoom: Serendipity Over Video</title>
+      <link>https://blog.jordancrane.me/posts/proximity-chat/</link>
+      <pubDate>Fri, 03 Jul 2020 20:44:28 -0700</pubDate>
+      
+      <guid>https://blog.jordancrane.me/posts/proximity-chat/</guid>
+      <description>Although I&amp;rsquo;m currently unemployed thanks to the global pandemic, the transition to remote work in my previous position brought about many changes to the way my team and I worked; some good, some bad. While I enjoyed the ability to work uninterrupted during periods of flow, I missed the spontaneous exchanges that were prone to happen in an office space but failed to materialize in the remote world. This was somewhat mitigated by the fact that my teammates and I were already close, but it still felt hindered.</description>
+    </item>
+    
+  </channel>
+</rss>
