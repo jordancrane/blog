@@ -1,11 +1,11 @@
 <header>
   <nav>
-    <h1><a href="/">{{ .Site.Author.handle }}</a>’s {{ .Site.Title }}.</h1>
+    <h1><a href="{{ .Site.Author.aboutpage }}">{{ .Site.Author.handle }}</a>’s {{ .Site.Title }}.</h1>
     <div class="menu">
 		{{ if isset .Site.Params "rsssections" }}
 			{{ $.Scratch.Add "sections" .Site.Params.rsssections }}
 			<ul>
-				{{ with .Site.Author.aboutpage }}<li><a href="{{ . }}">Home</a></li>{{ end }}
+        <li><a href="/">Home</a></li>
 				{{ range .Site.Menus.main }}
 				<li>
 					<a href="{{.URL}}">{{ .Name }}</a>
@@ -22,7 +22,6 @@
 					<a href="{{.URL}}">{{ .Name }}</a>
 				</li>
 				{{ end }}
-				{{ with .Site.Author.aboutpage }}<li><a href="{{ . }}">About</a></li>{{ end }}
 			</ul>
       	{{ end }}
     </div>

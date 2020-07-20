@@ -17,7 +17,7 @@ Paginate = 10
 	Description = "Personal blog of Jordan Crane."
 	ShowCopyright = true
 	RSSEnabled = true
-  RSSSections = [ "Posts", "Microposts" ]
+  RSSSections = [ "Posts", "Microposts", "Photos" ]
 	RSSMicropostTitles = false
 
 [taxonomies]
@@ -36,3 +36,4 @@ Paginate = 10
    weight = 2
    identifier = "microposts"
    url = "/microposts/"
+
