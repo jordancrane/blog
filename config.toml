@@ -1,0 +1,44 @@
+baseurl = "https://blog.jordancrane.me"
+languageCode = "en-us"
+title = "Blog"
+theme = "internet-weblog"
+pygmentsstyle = "emacs"
+Paginate = 10
+
+[author]
+	Handle = "Jordan Crane"
+	FirstName = "Jordan"
+	LastName = "Crane"
+	AboutPage = "https://jordancrane.me"
+	Location = "Portland, OR"
+	FlickrID = ""
+
+[params]
+	Description = "Personal blog of Jordan Crane."
+	ShowCopyright = true
+	RSSEnabled = true
+  RSSSections = [ "Posts", "Microposts", "Photos" ]
+	RSSMicropostTitles = false
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+   series = "series"
+
+[[menu.main]]
+   name = "Posts"
+   weight = 1
+   identifier = "posts"
+   url = "/posts/"
+
+[[menu.main]]
+   name = "Microposts"
+   weight = 2
+   identifier = "microposts"
+   url = "/microposts/"
+
+[[menu.main]]
+   name = "Photos"
+   weight = 3
+   identifier = "photos"
+   url = "/photos/"
