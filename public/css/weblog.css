@@ -1,6 +1,7 @@
 
 /* Page */
 
+
 body {
   font: 16px/24px "Avenir Next", "Helvetica Neue", Arial, Helvetica, sans-serif;
   line-height: 24px;
@@ -60,10 +61,10 @@ header {
 header h1 {
   text-align: left;
   vertical-align: middle;
-  font-size: 30px;
+  font-size: 55px;
   line-height: 32px;
   margin: 0 auto;
-  padding: 10px 10px 10px 0px;
+  padding: 10px 10px 20px 0px;
   max-width: 780px;
   color: #5B636E;
 }
@@ -85,17 +86,18 @@ nav {
 nav ul {
   list-style-type: none;
   margin: 0 auto;
-  padding: 0
+  padding: 0;
+  max-width: 780px;
 }
 
 nav ul > li {
   background-color: #fafafa;
-  display: inline;
+  display: inline-block;
   float: left;
-  padding: 10px;
+  padding: 10px 49.5px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 9pt;
+  font-size: 11pt;
   font-weight: normal;
 }
 
@@ -344,9 +346,10 @@ and (max-width: 780px) {
   }
 
   header h1 {
-    font-size: 22px;
+    font-size: 30px;
     line-height: 30px;
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
   }
 
   nav ul {
@@ -360,7 +363,9 @@ and (max-width: 780px) {
     float: none;
     margin: 0;
     padding: 10px;
+    padding-left: 20px;
     border-bottom: #f2f2f2 1px solid;
+    text-align: left;
   }
 
   nav ul:first-child {
