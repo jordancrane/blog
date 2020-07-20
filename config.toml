@@ -1,4 +1,4 @@
-baseurl = "https://blog.jordancrane.me"
+baseurl = "https://blog.jordancrane.me/"
 languageCode = "en-us"
 title = "Blog"
 theme = "internet-weblog"
