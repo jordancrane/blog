@@ -12,10 +12,10 @@
       
       <item>
         <title>2020-07-19T18:10:21-07:00</title>
-        <link>https://blog.jordancrane.me/microposts/2020-07-20t011021&#43;0000/</link>
+        <link>https://blog.jordancrane.me/microposts/2020/07/20/181020/</link>
         <pubDate>Sun, 19 Jul 2020 18:10:21 -0700</pubDate>
         <author>Jordan Crane</author>
-        <guid>https://blog.jordancrane.me/microposts/2020-07-20t011021&#43;0000/</guid>
+        <guid>https://blog.jordancrane.me/microposts/2020/07/20/181020/</guid>
         <description>&lt;p&gt;Giving microposts a try, seems like it could encourage me to post more often and make up for my Twitter deficiency&lt;/p&gt;
 </description>
       </item>
@@ -24,10 +24,10 @@
       
       <item>
         <title>Better Than Zoom: Serendipity Over Video</title>
-        <link>https://blog.jordancrane.me/posts/proximity-chat/</link>
+        <link>https://blog.jordancrane.me/posts/2020/07/03/204428/</link>
         <pubDate>Fri, 03 Jul 2020 20:44:28 -0700</pubDate>
         <author>Jordan Crane</author>
-        <guid>https://blog.jordancrane.me/posts/proximity-chat/</guid>
+        <guid>https://blog.jordancrane.me/posts/2020/07/03/204428/</guid>
         <description>&lt;p&gt;Although I&amp;rsquo;m currently unemployed thanks to the global pandemic, the transition to remote work in my previous position brought about many changes to the way my team and I worked; some good, some bad. While I enjoyed the ability to work uninterrupted during periods of flow, I missed the spontaneous exchanges that were prone to happen in an office space but failed to materialize in the remote world. This was somewhat mitigated by the fact that my teammates and I were already close, but it still felt hindered. In the process of searching for new employment, I&amp;rsquo;ve been attracted to remote positions due to their perks, but I&amp;rsquo;ve also found my mind being drawn to thoughts of how it might be more difficult to form those initial relationships in a fully remote environment. Today I want to explore how a company might foster serendipitous encounters in a remote workspace.&lt;/p&gt;
 &lt;h2 id=&#34;things-we-tried&#34;&gt;Things We Tried&lt;/h2&gt;
 &lt;p&gt;My team at Acorns explored a few different ways to maintain our culture of collaboration given the tools we had at our disposal; namely Google Meet and Slack.&lt;/p&gt;
@@ -72,10 +72,10 @@
       
       <item>
         <title>Hosting a GitHub User Site with Project Subdomains</title>
-        <link>https://blog.jordancrane.me/posts/this-site/</link>
+        <link>https://blog.jordancrane.me/posts/2020/06/30/191515/</link>
         <pubDate>Tue, 30 Jun 2020 19:15:15 -0700</pubDate>
         <author>Jordan Crane</author>
-        <guid>https://blog.jordancrane.me/posts/this-site/</guid>
+        <guid>https://blog.jordancrane.me/posts/2020/06/30/191515/</guid>
         <description>&lt;p&gt;I started this site with the original purpose of hosting my resume for easy sharing without much else in mind. That&amp;rsquo;s still mostly all it does, but I&amp;rsquo;ve solved a few problems along the way to make deployments (slightly) cleaner, so I thought I would document my process here.&lt;/p&gt;
 &lt;p&gt;I keep my resume in version control in a markdown file, and then use the fabulous &lt;a href=&#34;https://pandoc.org/&#34;&gt;Pandoc&lt;/a&gt; to convert it to a variety of formats, namely an HTML file for hosting and a PDF file for sharing over email. The code can be found &lt;a href=&#34;https://github.com/jordancrane/pandoc_resume&#34;&gt;here&lt;/a&gt;, which is forked from &lt;a href=&#34;https://github.com/mszep/pandoc_resume&#34;&gt;The Markdown Resume&lt;/a&gt;, which is based on &lt;a href=&#34;https://blog.chmd.fr/editing-a-cv-in-markdown-with-pandoc.html&#34;&gt;this&lt;/a&gt; blog post. So suffice it to say this is not my idea, but I love the approach and have tweaked it along the way to meet my needs. In order to get the generated files from my resume repository into my GitHub Pages &lt;a href=&#34;https://github.com/jordancrane/site&#34;&gt;site repository&lt;/a&gt;, I was originally using a submodule and simply generating the resume files as part of the deployment process. This had a few drawbacks:&lt;/p&gt;
 &lt;ul&gt;
@@ -93,10 +93,10 @@
       
       <item>
         <title>My Super Special Terminal Setup</title>
-        <link>https://blog.jordancrane.me/posts/super-special-terminal/</link>
+        <link>https://blog.jordancrane.me/posts/2020/06/06/200025/</link>
         <pubDate>Sat, 06 Jun 2020 20:00:25 -0700</pubDate>
         <author>Jordan Crane</author>
-        <guid>https://blog.jordancrane.me/posts/super-special-terminal/</guid>
+        <guid>https://blog.jordancrane.me/posts/2020/06/06/200025/</guid>
         <description>&lt;p&gt;If you&amp;rsquo;re anything like me you are super particular about your terminal setup. I am capable of working in most terminal environments, but since I spend a lot more time using the setup on my personal computer than those on machines I SSH into, I figure it&amp;rsquo;s worth spoiling myself in that context, despite the fact that it might incur a slight efficiency penalty when I&amp;rsquo;m using machines without all the niceties that I like to add. Since I am now in the process of setting up my development environment once again, I figured I would take this opportunity to document all the things I do in a post so I don&amp;rsquo;t have to go through so much trial and error every time to remember how I like things.&lt;/p&gt;
 &lt;h3 id=&#34;terminal&#34;&gt;Terminal&lt;/h3&gt;
 &lt;p&gt;First things first, don&amp;rsquo;t even open Terminal. Get &lt;a href=&#34;https://www.iterm2.com&#34;&gt;iTerm&lt;/a&gt;.&lt;/p&gt;

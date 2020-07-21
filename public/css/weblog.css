@@ -1,8 +1,8 @@
 
 /* Page */
 
-
 body {
+  background-color: #fafafa;
   font: 16px/24px "Avenir Next", "Helvetica Neue", Arial, Helvetica, sans-serif;
   line-height: 24px;
 }
@@ -91,7 +91,7 @@ nav ul {
 }
 
 nav ul > li {
-  background-color: #fafafa;
+  background-color: #f2f2f2;
   display: inline-block;
   float: left;
   padding: 10px 49.5px;
