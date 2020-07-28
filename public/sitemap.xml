@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.jordancrane.me/microposts/2020/07/20/181020/</loc>
-    <lastmod>2020-07-19T18:10:21-07:00</lastmod>
+    <loc>https://blog.jordancrane.me/</loc>
+    <lastmod>2020-07-28T12:26:07-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.jordancrane.me/</loc>
+    <loc>https://blog.jordancrane.me/posts/2020/07/28/122607/</loc>
+    <lastmod>2020-07-28T12:26:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jordancrane.me/posts/</loc>
+    <lastmod>2020-07-28T12:26:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jordancrane.me/microposts/2020/07/20/181020/</loc>
     <lastmod>2020-07-19T18:10:21-07:00</lastmod>
   </url>
   
@@ -29,11 +39,6 @@
   
   <url>
     <loc>https://blog.jordancrane.me/tags/collaboration/</loc>
-    <lastmod>2020-07-03T20:44:28-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jordancrane.me/posts/</loc>
     <lastmod>2020-07-03T20:44:28-07:00</lastmod>
   </url>
   
