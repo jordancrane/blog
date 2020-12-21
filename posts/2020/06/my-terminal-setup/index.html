@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jordan Crane">
+    <meta name="description" content="Personal blog of Jordan Crane.">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="generator" content="Hugo 0.79.0" />
+
+    
+    <title>Blog · Jordan Crane</title>
+
+    <link rel="stylesheet" href="https://blog.jordancrane.me/css/weblog.css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.14/css/lightgallery.min.css" type="text/css" />
+    
+
+
+    
+	<link href="https://blog.jordancrane.me/index.xml" rel="alternate" type="application/rss+xml" title="Blog" />
+	
+  </head>
+  <body class="site">
+
+<header>
+  <nav>
+    <h1><a href="https://jordancrane.me">Jordan Crane</a>’s Blog.</h1>
+    <div class="menu">
+		
+			
+			<ul>
+        <li><a href="/">Home</a></li>
+				
+				<li>
+					<a href="/posts/">Posts</a>
+					
+						<a href="/posts/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
+					
+				</li>
+				
+				<li>
+					<a href="/microposts/">Microposts</a>
+					
+						<a href="/microposts/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
+					
+				</li>
+				
+			</ul>
+		
+    </div>
+  </nav>
+</header>
+
+
+  <main class="content">
+
+    <article class="post">
+      
+        <h2><a rel="full-article" href="https://blog.jordancrane.me/posts/2020/06/my-terminal-setup/">My Super Special Terminal Setup</a></h2>
+      
+
+      <div class="postmeta">Posted on <time datetime="2020-06-06 20:00:25 -0700 PDT" pubdate="">June 6, 2020</time> in
+        <span class="categories">
+          
+        </span>
+      </div>
+
+      <p>
+        <p>If you&rsquo;re anything like me you are super particular about your terminal setup. I am capable of working in most terminal environments, but since I spend a lot more time using the setup on my personal computer than those on machines I SSH into, I figure it&rsquo;s worth spoiling myself in that context, despite the fact that it might incur a slight efficiency penalty when I&rsquo;m using machines without all the niceties that I like to add. Since I am now in the process of setting up my development environment once again, I figured I would take this opportunity to document all the things I do in a post so I don&rsquo;t have to go through so much trial and error every time to remember how I like things.</p>
+<h3 id="terminal">Terminal</h3>
+<p>First things first, don&rsquo;t even open Terminal. Get <a href="https://www.iterm2.com">iTerm</a>.</p>
+<h3 id="package-manager">Package Manager</h3>
+<p>The next thing you&rsquo;ll need is a package manager. I&rsquo;ve tried <a href="https://brew.sh">Homebrew</a>, but I found it to be confusing as someone who&rsquo;s spent time with other package managers like <code>apt</code> and <code>pacman</code>. I&rsquo;ve also run into issues when macOS updates are installed; sometimes the permissions of your <code>/usr/local</code> directory get reset, and consequently your whole environment gets screwed up. The latter experience left me with a sour taste in my mouth and a compulsive desire to Dockerize everything, so now I&rsquo;m using <a href="https://www.macports.org">MacPorts</a>. I found <a href="https://saagarjha.com/blog/2019/04/26/thoughts-on-macos-package-managers/">this post</a> to be a well thought out comparison between the two, if you&rsquo;re interested something more nuanced than my knee-jerk reaction.</p>
+<h3 id="docker">Docker</h3>
+<p>Not strictly a terminal thing, but something that&rsquo;s important to my environment, due to the aforementioned compulsive Dockerization habit. I just install the <a href="https://hub.docker.com/editions/community/docker-ce-desktop-mac/">Docker For Mac</a> app, not sure if that&rsquo;s the best way to do it but it&rsquo;s worked well for me so far.</p>
+<h3 id="shell">Shell</h3>
+<p>Once you&rsquo;ve got iTerm and MacPorts setup, time to install your shell of choice (unless it&rsquo;s <code>bash</code>, which is fine I guess). Personally I&rsquo;ve always been partial to <code>zsh</code>, mostly because it&rsquo;s what all my friends used in college (a nuanced decision making process, I know). Recently I&rsquo;ve been considering checking out <code>fish</code>, but I haven&rsquo;t gotten around to it yet. To install <code>zsh</code>, just run:</p>
+<pre><code>$ sudo port install zsh zsh-completions
+</code></pre><p>A necessary companion to <code>zsh</code> in my mind is <a href="https://github.com/sorin-ionescu/prezto">Prezto</a>, which adds a ton of nice features like history substring search, mostly reasonable <code>git</code> aliases, and <code>vim</code> bindings for your prompt, among other things. It&rsquo;s recommended that you fork the repo so you can store your personal configuration in GitHub. My fork is <a href="https://github.com/jordancrane/prezto">here</a>; it&rsquo;s pretty basic, just turning on a few colorization settings, adding some extra aliases, and tweaking my favorite prompt theme to have emoji (the most important change obviously).</p>
+<p>I&rsquo;ve typically used a modified version of the <code>steeef</code> prompt that comes with Prezto, but with this install I also discovered <a href="https://starship.rs">starship</a>, which seems interesting. I&rsquo;m unsure how much feature overlap it has with Prezto, so whether I continue using it or not remains yet to be seen.</p>
+<h3 id="text-editor">Text Editor</h3>
+<p>As far as I&rsquo;m concerned Vim is the One True Text Editor, and I mostly refuse to use any application that doesn&rsquo;t have a Vim bindings plugin. However, having gone way down the rabbit hole of Vim tweaking in the past, I will say that overall I prefer to use <a href="https://neovim.io">NeoVim</a> since it tends to be easier to get plugins to work well with NeoVim without recompiling with a bunch of different variant flags. Install it with</p>
+<pre><code>sudo port install neovim
+</code></pre><p>and add</p>
+<pre><code>alias vim='nvim'
+</code></pre><p>to your <code>.zshrc</code> for an easy transition. Two bindings I find important are:</p>
+<pre><code>nnoremap j gj
+nnoremap k gk
+</code></pre><p>which allow you to move up and down wrapped lines (helpful for writing blog posts and whatnot without needing to add line breaks manually).</p>
+<h3 id="font">Font</h3>
+<p>I really enjoy <a href="https://pcaro.es/p/hermit/">Hermit</a>.</p>
+<h3 id="colorscheme">Colorscheme</h3>
+<p>I like the Apprentice color scheme for both <a href="https://github.com/romainl/Apprentice">Vim</a> and <a href="https://github.com/romainl/apprentice-colorschemes">iTerm</a>. Do note that the background color for iTerm in that repo is a little off from that in the Vim one, change it to <code>#262626</code> to avoid having a frame around your Vim window. For installing it to Vim, I use <a href="https://github.com/junegunn/vim-plug">vim-plug</a>.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>I think that&rsquo;s about everything&hellip; This will likely be a living document that I will modify as my preferences change.</p>
+
+      </p>
+    </article>
+
+
+  </main>
+
+<footer>
+  <div class="footer_text">
+      <div>
+        <h3>Hi, <a href="https://jordancrane.me">I'm Jordan</a></h3>
+        <p>
+          I am a backend software engineer living in Portland, Oregon. I enjoy riding my bicycle, playing musical instruments (guitar and piano), and drawing.
+
+        </p>
+      </div>
+      
+  </div>
+
+  
+    <div class="footer_copyright">
+      &copy; 2020 <a href="https://jordancrane.me">Jordan Crane</a>
+       - Made in Portland, OR
+    </div>
+  
+</footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.14/js/lightgallery-all.min.js" charset="utf-8"></script>
+    <script src="/js/weblog.js" charset="utf-8"></script>
+    
+
+    <script type="text/javascript">
+
+  
+  $(function() {
+    
+    $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?id=&format=json&jsoncallback=?", function(data) {
+      iweblog.application.displayImages(data, 8);
+    });
+  });
+
+</script>
+
+    
+  </body>
+</html>
+

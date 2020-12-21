@@ -6,17 +6,13 @@
     <description>Recent content in development on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jun 2020 20:00:25 -0700</lastBuildDate>
-    
-	<atom:link href="https://blog.jordancrane.me/tags/development/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 06 Jun 2020 20:00:25 -0700</lastBuildDate><atom:link href="https://blog.jordancrane.me/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Super Special Terminal Setup</title>
-      <link>https://blog.jordancrane.me/posts/2020/06/06/200025/</link>
+      <link>https://blog.jordancrane.me/posts/2020/06/my-terminal-setup/</link>
       <pubDate>Sat, 06 Jun 2020 20:00:25 -0700</pubDate>
       
-      <guid>https://blog.jordancrane.me/posts/2020/06/06/200025/</guid>
+      <guid>https://blog.jordancrane.me/posts/2020/06/my-terminal-setup/</guid>
       <description>If you&amp;rsquo;re anything like me you are super particular about your terminal setup. I am capable of working in most terminal environments, but since I spend a lot more time using the setup on my personal computer than those on machines I SSH into, I figure it&amp;rsquo;s worth spoiling myself in that context, despite the fact that it might incur a slight efficiency penalty when I&amp;rsquo;m using machines without all the niceties that I like to add.</description>
     </item>
     

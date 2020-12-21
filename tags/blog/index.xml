@@ -6,36 +6,32 @@
     <description>Recent content in blog on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jul 2020 20:44:28 -0700</lastBuildDate>
-    
-	<atom:link href="https://blog.jordancrane.me/tags/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 03 Jul 2020 20:44:28 -0700</lastBuildDate><atom:link href="https://blog.jordancrane.me/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Better Than Zoom: Serendipity Over Video</title>
-      <link>https://blog.jordancrane.me/posts/2020/07/03/204428/</link>
+      <link>https://blog.jordancrane.me/posts/2020/07/better-than-zoom/</link>
       <pubDate>Fri, 03 Jul 2020 20:44:28 -0700</pubDate>
       
-      <guid>https://blog.jordancrane.me/posts/2020/07/03/204428/</guid>
+      <guid>https://blog.jordancrane.me/posts/2020/07/better-than-zoom/</guid>
       <description>Although I&amp;rsquo;m currently unemployed thanks to the global pandemic, the transition to remote work in my previous position brought about many changes to the way my team and I worked; some good, some bad. While I enjoyed the ability to work uninterrupted during periods of flow, I missed the spontaneous exchanges that were prone to happen in an office space but failed to materialize in the remote world. This was somewhat mitigated by the fact that my teammates and I were already close, but it still felt hindered.</description>
     </item>
     
     <item>
       <title>Hosting a GitHub User Site with Project Subdomains</title>
-      <link>https://blog.jordancrane.me/posts/2020/06/30/191515/</link>
+      <link>https://blog.jordancrane.me/posts/2020/06/github-pages-user-site-project-subdomains/</link>
       <pubDate>Tue, 30 Jun 2020 19:15:15 -0700</pubDate>
       
-      <guid>https://blog.jordancrane.me/posts/2020/06/30/191515/</guid>
+      <guid>https://blog.jordancrane.me/posts/2020/06/github-pages-user-site-project-subdomains/</guid>
       <description>I started this site with the original purpose of hosting my resume for easy sharing without much else in mind. That&amp;rsquo;s still mostly all it does, but I&amp;rsquo;ve solved a few problems along the way to make deployments (slightly) cleaner, so I thought I would document my process here.
 I keep my resume in version control in a markdown file, and then use the fabulous Pandoc to convert it to a variety of formats, namely an HTML file for hosting and a PDF file for sharing over email.</description>
     </item>
     
     <item>
       <title>My Super Special Terminal Setup</title>
-      <link>https://blog.jordancrane.me/posts/2020/06/06/200025/</link>
+      <link>https://blog.jordancrane.me/posts/2020/06/my-terminal-setup/</link>
       <pubDate>Sat, 06 Jun 2020 20:00:25 -0700</pubDate>
       
-      <guid>https://blog.jordancrane.me/posts/2020/06/06/200025/</guid>
+      <guid>https://blog.jordancrane.me/posts/2020/06/my-terminal-setup/</guid>
       <description>If you&amp;rsquo;re anything like me you are super particular about your terminal setup. I am capable of working in most terminal environments, but since I spend a lot more time using the setup on my personal computer than those on machines I SSH into, I figure it&amp;rsquo;s worth spoiling myself in that context, despite the fact that it might incur a slight efficiency penalty when I&amp;rsquo;m using machines without all the niceties that I like to add.</description>
     </item>
     
