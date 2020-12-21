@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jordan Crane">
+    <meta name="description" content="Personal blog of Jordan Crane.">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="generator" content="Hugo 0.79.0" />
+
+    
+    <title>Blog · Jordan Crane</title>
+
+    <link rel="stylesheet" href="https://blog.jordancrane.me/css/weblog.css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.14/css/lightgallery.min.css" type="text/css" />
+    
+
+
+    
+	<link href="https://blog.jordancrane.me/index.xml" rel="alternate" type="application/rss+xml" title="Blog" />
+	
+  </head>
+  <body class="site">
+
+<header>
+  <nav>
+    <h1><a href="https://jordancrane.me">Jordan Crane</a>’s Blog.</h1>
+    <div class="menu">
+		
+			
+			<ul>
+        <li><a href="/">Home</a></li>
+				
+				<li>
+					<a href="/posts/">Posts</a>
+					
+						<a href="/posts/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
+					
+				</li>
+				
+				<li>
+					<a href="/microposts/">Microposts</a>
+					
+						<a href="/microposts/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
+					
+				</li>
+				
+			</ul>
+		
+    </div>
+  </nav>
+</header>
+
+
+  <main class="content">
+
+    <article class="post">
+      
+        <h2><a rel="full-article" href="https://blog.jordancrane.me/posts/2020/06/github-pages-user-site-project-subdomains/">Hosting a GitHub User Site with Project Subdomains</a></h2>
+      
+
+      <div class="postmeta">Posted on <time datetime="2020-06-30 19:15:15 -0700 PDT" pubdate="">June 30, 2020</time> in
+        <span class="categories">
+          
+        </span>
+      </div>
+
+      <p>
+        <p>I started this site with the original purpose of hosting my resume for easy sharing without much else in mind. That&rsquo;s still mostly all it does, but I&rsquo;ve solved a few problems along the way to make deployments (slightly) cleaner, so I thought I would document my process here.</p>
+<p>I keep my resume in version control in a markdown file, and then use the fabulous <a href="https://pandoc.org/">Pandoc</a> to convert it to a variety of formats, namely an HTML file for hosting and a PDF file for sharing over email. The code can be found <a href="https://github.com/jordancrane/pandoc_resume">here</a>, which is forked from <a href="https://github.com/mszep/pandoc_resume">The Markdown Resume</a>, which is based on <a href="https://blog.chmd.fr/editing-a-cv-in-markdown-with-pandoc.html">this</a> blog post. So suffice it to say this is not my idea, but I love the approach and have tweaked it along the way to meet my needs. In order to get the generated files from my resume repository into my GitHub Pages <a href="https://github.com/jordancrane/site">site repository</a>, I was originally using a submodule and simply generating the resume files as part of the deployment process. This had a few drawbacks:</p>
+<ul>
+<li>Every time I changed my resume I had to redeploy the whole site.</li>
+<li>I use <code>docker-compose</code> to build the resume, and Docker was attempting to use the same container to build it in the resume repository and in the site submodule. This meant I had to run <code>docker container rm</code> every time I switched between updating the resume and deploying the site.</li>
+</ul>
+<p>In order to mitigate these issues I decided to host the resume independently as its own GitHub pages project site, and simply link to it from this site. I could have just used the built-in GitHub Pages setup of the project site being a path under my user site, but I liked the idea of making it a subdomain more (<code>resume.jordancrane.me</code> just looks more appealing than <code>jordancrane.me/pandoc_resume/</code> to me, and I&rsquo;m a sucker for details that literally no one else will notice). To deploy the generated files from my resume repository I opted to <a href="https://gist.github.com/cobyism/4730490">use a subtree</a> due to the simplicity. This isn&rsquo;t <em>ideal</em> so I may revisit it in the future, but it works for now. Assuming that you already have your personal site configured with a custom domain (GitHub&rsquo;s <a href="https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site">documentation</a> on this is pretty good) adding a subdomain is pretty straightforward. All you need to do is configure a <code>CNAME</code> file in the root of your deployment branch with your desired subdomain, mine looks like this:</p>
+<pre><code>resume.jordancrane.me
+</code></pre><p>Then you simply configure that as your project&rsquo;s custom domain under the repository settings, and add a new CNAME record to your DNS provider that directs the subdomain host (<code>resume</code>) to your GitHub Pages domain (<code>jordancrane.github.io.</code>). This is pretty simple, and GitHub also documents this well, but I was initially confused by the fact that it doesn&rsquo;t need to point directly to the project site.</p>
+<p>Now that I&rsquo;ve configured this, I can deploy my resume individually directly from it&rsquo;s repository, without deploying the entire site. Additionally I was able to remove the <code>docker-compose</code> step from the build process for the site, so I no longer have to deal with container conflicts from building it in multiple places. I&rsquo;m sure there are better ways still to do this, but I&rsquo;d be lying if I said the small quality of life improvements brought by this change don&rsquo;t bring me some joy. My next step is to move my deployment processes into GitHub Actions so I can get rid of my bad deploy scripts, but I&rsquo;ll save that for another day.</p>
+
+      </p>
+    </article>
+
+
+  </main>
+
+<footer>
+  <div class="footer_text">
+      <div>
+        <h3>Hi, <a href="https://jordancrane.me">I'm Jordan</a></h3>
+        <p>
+          I am a backend software engineer living in Portland, Oregon. I enjoy riding my bicycle, playing musical instruments (guitar and piano), and drawing.
+
+        </p>
+      </div>
+      
+  </div>
+
+  
+    <div class="footer_copyright">
+      &copy; 2020 <a href="https://jordancrane.me">Jordan Crane</a>
+       - Made in Portland, OR
+    </div>
+  
+</footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.14/js/lightgallery-all.min.js" charset="utf-8"></script>
+    <script src="/js/weblog.js" charset="utf-8"></script>
+    
+
+    <script type="text/javascript">
+
+  
+  $(function() {
+    
+    $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?id=&format=json&jsoncallback=?", function(data) {
+      iweblog.application.displayImages(data, 8);
+    });
+  });
+
+</script>
+
+    
+  </body>
+</html>
+
