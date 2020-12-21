@@ -3,7 +3,7 @@ function newmicropost() {
     local month=`date +%m`
     local day=`date +%d`
     local time=`date +%H%M%S`
-    local file="microposts/${year}/${month}/${day}/${time}.md"
+    local file="microposts/${year}/${month}/${1}.md"
 
     vim `hugo new ${file} | cut -d ' ' -f 1`
 }
@@ -14,7 +14,7 @@ function newpost() {
     local month=`date +%m`
     local day=`date +%d`
     local time=`date +%H%M%S`
-    local file="posts/${year}/${month}/${day}/${time}.md"
+    local file="posts/${year}/${month}/${1}.md"
 
     vim `hugo new ${file} | cut -d ' ' -f 1`
 }
@@ -25,7 +25,7 @@ function newphotopost() {
   local month=`date +%m`
   local day=`date +%d`
   local time=`date +%H%M%S`
-  local file="photos/${year}/${month}/${day}/${time}.md"
+  local file="photos/${year}/${month}/${1}.md"
 
 	vim `hugo new ${file} | cut -d ' ' -f 1`
 }
