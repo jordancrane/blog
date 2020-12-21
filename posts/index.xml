@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2020 12:26:07 -0700</lastBuildDate><atom:link href="https://blog.jordancrane.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 17:22:39 -0800</lastBuildDate><atom:link href="https://blog.jordancrane.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating from ProtonMail to Mailbox.org</title>
+      <link>https://blog.jordancrane.me/posts/2020/12/migrating-protonmail-to-mailbox-org/</link>
+      <pubDate>Sun, 20 Dec 2020 17:22:39 -0800</pubDate>
+      
+      <guid>https://blog.jordancrane.me/posts/2020/12/migrating-protonmail-to-mailbox-org/</guid>
+      <description>A few years back I decided to switch from using a free email provider to a paid provider. This decision was driven by several factors, but the primary reasons were privacy concerns, and a desire for an email address with my domain name. I spent some time comparing different email providers, and settled on ProtonMail because they offered encryption at rest without any effort on my part, and they had a nicer iOS app than similar encrypted email providers.</description>
+    </item>
+    
     <item>
       <title>How My Three-Year Car Ownership Hiatus Came To An End</title>
       <link>https://blog.jordancrane.me/posts/2020/07/zipcar-to-car-ownership/</link>
