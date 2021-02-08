@@ -4,15 +4,13 @@ date: 2021-02-06T13:10:41-08:00
 draft: true
 ---
 
-## Background and Requirements
-
 For going on three years now I've been a faithful [ErgoDox EZ](https://ergodox-ez.com/) user and evangalist. 
 
-![ErgoDox EZ and Trackpad](ergodox.png)
+![An ErgoDox EZ split keyboard and a trackpad on a desk](ergodox.png)
 
 At first I didn't understand why I would possibly want to spend several hundred dollars on keyboard _parts_ and then still have to put them all together using several hundred dollars worth of tools, when I could spend the same amount (or realistically, less) and get a pre-made solution that works out of the box. But, as time has passed, my opinions on the ideal keyboard layout have grown gradually stronger (as I assume they tend to once you start using a programmable keyboard), and I'm finding myself wishing for configurations that aren't offered in a commercially manufactured keyboard. Namely, I'm plagued by two opinions which are inconvenient when held in tandem: firstly, that the ErgoDox has _too many keys_; and secondly, that split keyboards are _intrinsically superior_ to traditional keyboards. Since there aren't any commercially available split mechanical keyboards with substantially fewer keys than the ErgoDox (to my knowledge at least), this meant that to scratch this itch I was going to have to seek out a custom solution. I've always found the [Planck](https://olkb.com/collections/planck) keyboard to be an aesthetically pleasing keyboard---something about its symmetry and uniformity speaks to me, and it does away with the useless top row and 1u thumb cluster keys that plague the ErgoDox (seriously who uses these and what do their thumbs look like?)
 
-![Useless ErgoDox keys](useless-keys.png)
+![Useless ErgoDox keys, highlighted in red](useless-keys.png)
 
 So when I found out that there existed a split version of the Planck called the Let's Split, I knew it was the one. Maybe not the one forever, but at least be the one I want to build first (I can already tell this is going to be a rabbit hole).
 
@@ -31,7 +29,7 @@ For the most part I followed the very well-done Let's Split [build guide](https:
 
 ## Parts List
 
-![Everything But the PCB](everything-but-the-pcb.png)
+![All the supplies for the build except the PCB, spread out on a desk](everything-but-the-pcb.png)
 
 - Case (linked in previous section)
 - [PCB](https://spacecat.design/collections/pcbs-cases-kits/products/lets-split-pcbs)
@@ -57,9 +55,9 @@ I did this first as a test fit because it got here first and I'm impatient. Ther
 
 The approach I took was to fasten the standoffs to the top plate and then stack the middle layers onto that, before attaching the bottom layer.
 
-![The top plate with standoffs attached](top-plate.png)
+![The top matte clear acrylic plate with standoffs attached](top-plate.png)
 ![The middle layers stacked on the standoffs](middle-layers.png)
-![The bottom plate attached with rubber feet attached](bottom-and-feet.png)
+![The bottom matte clear acrylic plate attached with clear rubber feet attached](bottom-and-feet.png)
 
 In retrospect I probably should have fastened them to the bottom plate first instead, since I'll have to take the top plate off for assembly, and that will be difficult to do since the standoffs won't be anchored to the bottom plate and will turn freely. Live and learn I suppose.
 
