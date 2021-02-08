@@ -38,7 +38,19 @@ blockquote p {
 blockquote p:last-child {
   font-style: normal;
   padding-left: 30px;
+}
 
+pre {
+  padding: 5px 10px;
+  background-color: #F0F2F5;
+}
+
+code {
+  background-color: #F0F2F5;
+}
+
+:not(pre) > code {
+  padding: 0px 5px;
 }
 
 .site {
