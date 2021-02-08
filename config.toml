@@ -10,10 +10,22 @@ Paginate = 10
   author = "Jordan Crane"
   email = "jordan@jordancrane.me"
   description = "Backend software engineer based in Portland, OR"
-  postcss = true
+  postcss = false
   # Include the author name in the <title> of articles
   includeAuthorInTitle = true
   # Can be any colour here: https://bulma.io/documentation/layout/hero/#colors
   # e.g "warning" or "danger" for yellow or red.
   hero_colour = "link"
   disableAttribution = true
+
+[[params.social]]
+  icon = "github"
+  url = "https://github.com/jordancrane/"
+
+[[params.social]]
+  icon = "linkedin"
+  url = "https://linkedin.com/in/jordancrane"
+
+[[params.social]]
+  icon = "instagram"
+  url = "https://www.instagram.com/jcrvne" 
