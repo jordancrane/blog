@@ -8,11 +8,11 @@ draft: true
 
 For going on three years now I've been a faithful [ErgoDox EZ](https://ergodox-ez.com/) user and evangalist. 
 
-![ErgoDox EZ and Trackpad](./ergodox.png)
+![ErgoDox EZ and Trackpad](ergodox.png)
 
-I didn't understand why I could possibly want to spend several hundred dollars on keyboard _parts_ and then still have to put them all together using several hundred dollars worth of tools, when I could spend the same amount (or realistically, less) and get a pre-made solution that works just as well. But, as time has passed, my opinions on the ideal keyboard layout have grown gradually stronger (as I assume they tend to once you start using a programmable keyboard), and I'm finding myself wishing for configurations that aren't offered in a commercially manufactured keyboard. Namely, I'm plagued by two opinions which are inconvenient when held in tandem: firstly, that the ErgoDox has _too many keys_; and secondly, that split keyboards are _intrinsically superior_ to traditional keyboards. Since there aren't any commercially available split mechanical keyboards with substantially fewer keys than the ErgoDox (to my knowledge at least), this meant that to scratch this itch I was going to have to seek out a custom solution. I've always found the [Planck](https://olkb.com/collections/planck) keyboard to be an aesthetically pleasing keyboard---something about its symmetry and uniformity speaks to me, and it does away with the useless top row and 1u thumb cluster keys that plague the ErgoDox (seriously who uses these and what do their thumbs look like?)
+At first I didn't understand why I would possibly want to spend several hundred dollars on keyboard _parts_ and then still have to put them all together using several hundred dollars worth of tools, when I could spend the same amount (or realistically, less) and get a pre-made solution that works out of the box. But, as time has passed, my opinions on the ideal keyboard layout have grown gradually stronger (as I assume they tend to once you start using a programmable keyboard), and I'm finding myself wishing for configurations that aren't offered in a commercially manufactured keyboard. Namely, I'm plagued by two opinions which are inconvenient when held in tandem: firstly, that the ErgoDox has _too many keys_; and secondly, that split keyboards are _intrinsically superior_ to traditional keyboards. Since there aren't any commercially available split mechanical keyboards with substantially fewer keys than the ErgoDox (to my knowledge at least), this meant that to scratch this itch I was going to have to seek out a custom solution. I've always found the [Planck](https://olkb.com/collections/planck) keyboard to be an aesthetically pleasing keyboard---something about its symmetry and uniformity speaks to me, and it does away with the useless top row and 1u thumb cluster keys that plague the ErgoDox (seriously who uses these and what do their thumbs look like?)
 
-![Useless ErgoDox keys](./useless-keys.png)
+![Useless ErgoDox keys](useless-keys.png)
 
 So when I found out that there existed a split version of the Planck called the Let's Split, I knew it was the one. Maybe not the one forever, but at least be the one I want to build first (I can already tell this is going to be a rabbit hole).
 
@@ -31,7 +31,7 @@ For the most part I followed the very well-done Let's Split [build guide](https:
 
 ## Parts List
 
-![Everything But the PCB](./everything-but-the-pcb.png)
+![Everything But the PCB](everything-but-the-pcb.png)
 
 - Case (linked in previous section)
 - [PCB](https://spacecat.design/collections/pcbs-cases-kits/products/lets-split-pcbs)
@@ -53,15 +53,13 @@ For the most part I followed the very well-done Let's Split [build guide](https:
 
 I did this first as a test fit because it got here first and I'm impatient. There is a ton of plastic backing that needs to be peeled off, which sounds fun but in reality is frustrating and really messed up my finger nails. 
 
-![A pile of plastic backing](./plastic-backing.png "Plastic Backing")
+![A pile of plastic backing](plastic-backing.png "Plastic Backing")
 
 The approach I took was to fasten the standoffs to the top plate and then stack the middle layers onto that, before attaching the bottom layer.
 
 ![The top plate with standoffs attached](top-plate.png)
-
-![The middle layers stacked on the standoffs](./middle-layers.png)
-
-![The bottom plate attached with rubber feet attached](./bottom-and-feet.png)
+![The middle layers stacked on the standoffs](middle-layers.png)
+![The bottom plate attached with rubber feet attached](bottom-and-feet.png)
 
 In retrospect I probably should have fastened them to the bottom plate first instead, since I'll have to take the top plate off for assembly, and that will be difficult to do since the standoffs won't be anchored to the bottom plate and will turn freely. Live and learn I suppose.
 
@@ -87,7 +85,7 @@ $ vagrant halt
 
 Then navigate to the halted machine in VirtualBox, and add the USB device by doing the following: right click -> Settings -> Ports -> USB; select USB 3.0; click the `+` icon on the box below; select the ATMEL ATm32U4DFU device; and save the settings. 
 
-![VirtualBox USB settings screen](./usb-settings.png)
+![VirtualBox USB settings screen](usb-settings.png)
 
 Then restart the VM by running `vagrant up` again. Once the machine has restarted with USB access, we'll need to SSH into it in order to build and flash the firmware. To do so, run:
 
@@ -119,7 +117,7 @@ $ vim keyboards/lets_split/rules.mk
 
 Then set the value of `BOOTLOADER` to `atmel-dfu`: 
 
-![rules.mk file open in vim with BOOTLOADER set to atmel-dfu](./rules-mk.png)
+![rules.mk file open in vim with BOOTLOADER set to atmel-dfu](rules-mk.png)
 
 Next, to support either half of the board acting as the primary, we need to enable `EE_HANDS` in `config.h`:
 
@@ -148,7 +146,7 @@ vagrant$ make let_split/rev2:default:dfu-split-right
 
 Now when we plug in each controller and navigate to the system keyboard settings, we should see "Lets Split v2" in the drop down. 
 
-![macOS keyboard settings screen](./keyboard-settings.png)
+![macOS keyboard settings screen](keyboard-settings.png)
 
 Success!
 
@@ -175,6 +173,8 @@ $ echo "#define RGBLED_SPLIT { 6, 6 }" >> keyboards/lets_split/config.h
 ```
 
 The numbers indicate the number of LEDs on each half. I used 6 LEDs on each, hence the `{ 6, 6 }`.
+
+We'll also need to set `RGBLIGHT_ENABLE` to `true` in `rules.mk`.
 
 ## Finished Product
 
