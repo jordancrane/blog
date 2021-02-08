@@ -2,7 +2,7 @@
 title: "My Super Special Terminal Setup"
 date: 2020-06-06T20:00:25-07:00
 showDate: true
-tags: ["development"]
+tags: ["Development"]
 ---
 
 If you're anything like me you are super particular about your terminal setup. I am capable of working in most terminal environments, but since I spend a lot more time using the setup on my personal computer than those on machines I SSH into, I figure it's worth spoiling myself in that context, despite the fact that it might incur a slight efficiency penalty when I'm using machines without all the niceties that I like to add. Since I am now in the process of setting up my development environment once again, I figured I would take this opportunity to document all the things I do in a post so I don't have to go through so much trial and error every time to remember how I like things.

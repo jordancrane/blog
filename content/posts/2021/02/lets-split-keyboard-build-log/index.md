@@ -2,6 +2,7 @@
 title: "Let's Split Build Log (My First Mechanical Keyboard Build)"
 date: 2021-02-06T13:10:41-08:00
 draft: true
+tags: ["Life", "Hobbies"]
 ---
 
 For going on three years now I've been a faithful [ErgoDox EZ](https://ergodox-ez.com/) user and evangalist. 

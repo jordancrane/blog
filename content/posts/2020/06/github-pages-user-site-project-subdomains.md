@@ -3,7 +3,7 @@ title: "Hosting a GitHub User Site with Project Subdomains"
 date: 2020-06-30T19:15:15-07:00
 showDate: true
 draft: false
-tags: ["blog"]
+tags: ["Development"]
 ---
 
 I started this site with the original purpose of hosting my resume for easy sharing without much else in mind. That's still mostly all it does, but I've solved a few problems along the way to make deployments (slightly) cleaner, so I thought I would document my process here.

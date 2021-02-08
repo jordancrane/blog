@@ -3,7 +3,7 @@ title: "Better Than Zoom: Serendipity Over Video"
 date: 2020-07-03T20:44:28-07:00
 showDate: true
 draft: false
-tags: ["remote work", "collaboration"]
+tags: ["Work"]
 ---
 
 Although I'm currently unemployed thanks to the global pandemic, the transition to remote work in my previous position brought about many changes to the way my team and I worked; some good, some bad. While I enjoyed the ability to work uninterrupted during periods of flow, I missed the spontaneous exchanges that were prone to happen in an office space but failed to materialize in the remote world. This was somewhat mitigated by the fact that my teammates and I were already close, but it still felt hindered. In the process of searching for new employment, I've been attracted to remote positions due to their perks, but I've also found my mind being drawn to thoughts of how it might be more difficult to form those initial relationships in a fully remote environment. Today I want to explore how a company might foster serendipitous encounters in a remote workspace.

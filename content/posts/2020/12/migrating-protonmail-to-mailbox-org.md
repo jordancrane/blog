@@ -2,7 +2,7 @@
 title: "Migrating from ProtonMail to Mailbox.org"
 date: 2020-12-20T17:22:39-08:00
 draft: false
-tags: ["email"]
+tags: ["Development"]
 ---
 
 A few years back I decided to switch from using a free email provider to a paid provider. This decision was driven by several factors, but the primary reasons were privacy concerns, and a desire for an email address with my domain name. I spent some time comparing different email providers, and settled on ProtonMail because they offered encryption at rest without any effort on my part, and they had a nicer iOS app than similar encrypted email providers. Now after several years of using ProtonMail, I am revisiting that decision. My motivations for doing so are as follows.
