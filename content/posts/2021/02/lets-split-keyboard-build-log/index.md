@@ -54,9 +54,7 @@ I did this first as a test fit because it got here first and I'm impatient. Ther
 
 The approach I took was to fasten the standoffs to the top plate and then stack the middle layers onto that, before attaching the bottom layer.
 
-![The top matte clear acrylic plate with standoffs attached](top-plate.png)
-![The middle layers stacked on the standoffs](middle-layers.png)
-![The bottom matte clear acrylic plate attached with clear rubber feet attached](bottom-and-feet.png)
+![A collage of the case being assembled](case-assembly.png)
 
 In retrospect I probably should have fastened them to the bottom plate first instead, since I'll have to take the top plate off for assembly, and that will be difficult to do since the standoffs won't be anchored to the bottom plate and will turn freely. Live and learn I suppose.
 
