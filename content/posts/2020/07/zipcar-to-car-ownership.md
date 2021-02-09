@@ -1,7 +1,7 @@
 ---
 title: "How My Three-Year Car Ownership Hiatus Came To An End"
 date: 2020-07-28T12:26:07-07:00
-tags: ["Life", "Essays"]
+tags: ["Life"]
 ---
 
 Back when I was in college I owned a 1995 manual-transmission SUV that was a total tank. It served me well during countless trips between Corvallis and Seattle, where my family lives, and on many adventures in between. It guzzled gas, was littered with CDs (the only method by which to listen to music without advertisements on the outdated stereo unit), and had stains on the cloth seats from where my parents' dog had vomited all over it on the way to the vet; but man did I love that car. However, after graduation I moved to Portland and its utility waned. Parking in my downtown apartment building was more money than I was willing to pay, and I either took transit or biked everywhere. As a temporary fix I left it in the parking lot at work until they told me to either move it or expect it to be impounded (it lasted a surprising 4 months there before someone noticed). At that point, I decided the old beast had become more of a burden than a benefit, so I sold it and signed up for a car2go membership. Thus began my car-free existence.
