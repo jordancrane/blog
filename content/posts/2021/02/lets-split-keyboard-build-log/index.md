@@ -2,7 +2,7 @@
 title: "Let's Split Build Log (My First Mechanical Keyboard Build)"
 date: 2021-02-06T13:10:41-08:00
 draft: true
-tags: ["Life", "Hobbies"]
+tags: ["Life", "Keyboards"]
 ---
 
 ![An ErgoDox EZ split keyboard and a trackpad on a desk](ergodox.png)

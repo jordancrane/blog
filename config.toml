@@ -1,6 +1,6 @@
 baseurl = "https://blog.jordancrane.me/"
 languageCode = "en-us"
-title = "Jordan Crane's Blog"
+title = "Blog-Standard"
 theme = "bare"
 pygmentsstyle = "emacs"
 Paginate = 10
@@ -9,7 +9,7 @@ Paginate = 10
   mainSections = ["posts"]
   author = "Jordan Crane"
   email = "jordan@jordancrane.me"
-  description = "Backend software engineer based in Portland, OR"
+  description = "Backend software engineer living in Portland, OR"
   postcss = false
   # Include the author name in the <title> of articles
   includeAuthorInTitle = true
