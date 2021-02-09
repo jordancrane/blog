@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>development on Blog</title>
+    <title>Development on Blog-Standard</title>
     <link>https://blog.jordancrane.me/tags/development/</link>
-    <description>Recent content in development on Blog</description>
+    <description>Recent content in Development on Blog-Standard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jun 2020 20:00:25 -0700</lastBuildDate><atom:link href="https://blog.jordancrane.me/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 17:22:39 -0800</lastBuildDate><atom:link href="https://blog.jordancrane.me/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating from ProtonMail to Mailbox.org</title>
+      <link>https://blog.jordancrane.me/posts/2020/12/migrating-protonmail-to-mailbox-org/</link>
+      <pubDate>Sun, 20 Dec 2020 17:22:39 -0800</pubDate>
+      
+      <guid>https://blog.jordancrane.me/posts/2020/12/migrating-protonmail-to-mailbox-org/</guid>
+      <description>A few years back I decided to switch from using a free email provider to a paid provider. This decision was driven by several factors, but the primary reasons were privacy concerns, and a desire for an email address with my domain name. I spent some time comparing different email providers, and settled on ProtonMail because they offered encryption at rest without any effort on my part, and they had a nicer iOS app than similar encrypted email providers.</description>
+    </item>
+    
+    <item>
+      <title>Hosting a GitHub User Site with Project Subdomains</title>
+      <link>https://blog.jordancrane.me/posts/2020/06/github-pages-user-site-project-subdomains/</link>
+      <pubDate>Tue, 30 Jun 2020 19:15:15 -0700</pubDate>
+      
+      <guid>https://blog.jordancrane.me/posts/2020/06/github-pages-user-site-project-subdomains/</guid>
+      <description>I started this site with the original purpose of hosting my resume for easy sharing without much else in mind. That&amp;rsquo;s still mostly all it does, but I&amp;rsquo;ve solved a few problems along the way to make deployments (slightly) cleaner, so I thought I would document my process here.
+I keep my resume in version control in a markdown file, and then use the fabulous Pandoc to convert it to a variety of formats, namely an HTML file for hosting and a PDF file for sharing over email.</description>
+    </item>
+    
     <item>
       <title>My Super Special Terminal Setup</title>
       <link>https://blog.jordancrane.me/posts/2020/06/my-terminal-setup/</link>

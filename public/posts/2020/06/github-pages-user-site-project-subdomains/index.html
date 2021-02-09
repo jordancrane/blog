@@ -1,73 +1,141 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jordan Crane">
-    <meta name="description" content="Personal blog of Jordan Crane.">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <meta name="generator" content="Hugo 0.80.0" />
+<html lang="en">
 
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
     
-    <title>Blog · Jordan Crane</title>
+    Hosting a GitHub User Site with Project Subdomains
+     | Jordan Crane 
+  </title>
+  <link rel="stylesheet" href='https://blog.jordancrane.me/css/site.min.2ea495238efc1ab5397977e37efa658628ec1b7bec210f7b7cfe87402b5f069c9e51a94fc113ccb3591b64220b13a8f71f206698e2de667f49df05e80932e290.css' integrity='sha512-LqSVI478GrU5eXfjfvplhijsG3vsIQ97fP6HQCtfBpyeUalPwRPMs1kbZCILE6j3HyBmmOLeZn9J3wXoCTLikA=='>
+  <link rel="canonical" href="https://blog.jordancrane.me/posts/2020/06/github-pages-user-site-project-subdomains/">
+  <link rel="alternate" type="application/rss&#43;xml" href="https://blog.jordancrane.me/index.xml" title="Blog-Standard">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <meta name="author" content="Jordan Crane">
+  <meta name="description" content="I started this site with the original purpose of hosting my resume for easy sharing without much else in mind. That&rsquo;s still mostly all it does, but I&rsquo;ve solved a few problems along the way to make deployments (slightly) cleaner, so I thought I would document my process here.
+I keep my resume in version control in a markdown file, and then use the fabulous Pandoc to convert it to a variety of formats, namely an HTML file for hosting and a PDF file for sharing over email.">
 
-    <link rel="stylesheet" href="https://blog.jordancrane.me/css/weblog.css" media="screen" charset="utf-8" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.14/css/lightgallery.min.css" type="text/css" />
-    
+  <meta property="og:title" content="Hosting a GitHub User Site with Project Subdomains" />
+<meta property="og:description" content="I started this site with the original purpose of hosting my resume for easy sharing without much else in mind. That&rsquo;s still mostly all it does, but I&rsquo;ve solved a few problems along the way to make deployments (slightly) cleaner, so I thought I would document my process here.
+I keep my resume in version control in a markdown file, and then use the fabulous Pandoc to convert it to a variety of formats, namely an HTML file for hosting and a PDF file for sharing over email." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.jordancrane.me/posts/2020/06/github-pages-user-site-project-subdomains/" />
+<meta property="article:published_time" content="2020-06-30T19:15:15-07:00" />
+<meta property="article:modified_time" content="2020-06-30T19:15:15-07:00" />
 
-
-    
-	<link href="https://blog.jordancrane.me/index.xml" rel="alternate" type="application/rss+xml" title="Blog" />
-	
-  </head>
-  <body class="site">
-
-<header>
-  <nav>
-    <h1><a href="https://jordancrane.me">Jordan Crane</a>’s Blog.</h1>
-    <div class="menu">
-		
-			
-			<ul>
-        <li><a href="/">Home</a></li>
-				
-				<li>
-					<a href="/posts/">Posts</a>
-					
-						<a href="/posts/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
-					
-				</li>
-				
-				<li>
-					<a href="/microposts/">Microposts</a>
-					
-						<a href="/microposts/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
-					
-				</li>
-				
-			</ul>
-		
+</head>
+<body><nav class="navbar is-transparent " role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a style="font-weight: 900;" class="navbar-item" href="https://blog.jordancrane.me/">
+      Blog-Standard
+    </a>
+  </div>
+  
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      
+      <a class="navbar-item" href="https://blog.jordancrane.me/tags/development/">
+        
+        Development
+        
+      </a>
+      
+      <a class="navbar-item" href="https://blog.jordancrane.me/tags/life/">
+        
+        Life
+        
+      </a>
+      
+      <a class="navbar-item" href="https://blog.jordancrane.me/tags/work/">
+        
+        Work
+        
+      </a>
+      
     </div>
-  </nav>
-</header>
-
-
-  <main class="content">
-
-    <article class="post">
+    
+    <div class="navbar-end">
       
-        <h2><a rel="full-article" href="https://blog.jordancrane.me/posts/2020/06/github-pages-user-site-project-subdomains/">Hosting a GitHub User Site with Project Subdomains</a></h2>
-      
-
-      <div class="postmeta">Posted on <time datetime="2020-06-30 19:15:15 -0700 PDT" pubdate="">June 30, 2020</time> in
-        <span class="categories">
+      <a class="navbar-item" href="https://github.com/jordancrane/" rel="noopener" target="_blank">
+        <span class="icon">
+          
+            <img alt="icons/svg/github.svg" src='https://blog.jordancrane.me/icons/svg/github.svg'>
           
         </span>
-      </div>
+      </a>
+      
+      <a class="navbar-item" href="https://linkedin.com/in/jordancrane" rel="noopener" target="_blank">
+        <span class="icon">
+          
+            <img alt="icons/svg/linkedin.svg" src='https://blog.jordancrane.me/icons/svg/linkedin.svg'>
+          
+        </span>
+      </a>
+      
+      <a class="navbar-item" href="https://www.instagram.com/jcrvne" rel="noopener" target="_blank">
+        <span class="icon">
+          
+            <img alt="icons/svg/instagram.svg" src='https://blog.jordancrane.me/icons/svg/instagram.svg'>
+          
+        </span>
+      </a>
+      
+      
+      <a class="navbar-item" href="mailto:jordan@jordancrane.me" target="_blank">
+        <span class="icon">
+          <img alt="email" src='https://blog.jordancrane.me/icons/svg/email.svg'>
+        </span>
+      </a>
+      
+      <a class="navbar-item" href="https://blog.jordancrane.me/index.xml" target="_blank">
+        <span class="icon">
+          <img alt="rss" src='https://blog.jordancrane.me/icons/svg/rss.svg'>
+        </span>
+      </a>
+      
+    </div>
+  </div>
+</nav>
 
-      <p>
-        <p>I started this site with the original purpose of hosting my resume for easy sharing without much else in mind. That&rsquo;s still mostly all it does, but I&rsquo;ve solved a few problems along the way to make deployments (slightly) cleaner, so I thought I would document my process here.</p>
+  <section>
+    <section class='hero is-small is-link is-fullwidth'>
+      <div class="hero-body">
+<div class="container">
+  <h1 class="title">
+    Hosting a GitHub User Site with Project Subdomains
+  </h1>
+  <h2 class="subtitle">
+    <time datetime='2020-06-30T19:15:15-07:00'>
+      June 30, 2020
+    </time>
+    
+    <br>
+    
+    
+    
+    <a class="tag is-link" href="https://blog.jordancrane.me/tags/development/">Development</a>
+    
+    
+    
+  </h2>
+</div>
+
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+<div id="content" class="content is-medium is-family-secondary">
+  <p>I started this site with the original purpose of hosting my resume for easy sharing without much else in mind. That&rsquo;s still mostly all it does, but I&rsquo;ve solved a few problems along the way to make deployments (slightly) cleaner, so I thought I would document my process here.</p>
 <p>I keep my resume in version control in a markdown file, and then use the fabulous <a href="https://pandoc.org/">Pandoc</a> to convert it to a variety of formats, namely an HTML file for hosting and a PDF file for sharing over email. The code can be found <a href="https://github.com/jordancrane/pandoc_resume">here</a>, which is forked from <a href="https://github.com/mszep/pandoc_resume">The Markdown Resume</a>, which is based on <a href="https://blog.chmd.fr/editing-a-cv-in-markdown-with-pandoc.html">this</a> blog post. So suffice it to say this is not my idea, but I love the approach and have tweaked it along the way to meet my needs. In order to get the generated files from my resume repository into my GitHub Pages <a href="https://github.com/jordancrane/site">site repository</a>, I was originally using a submodule and simply generating the resume files as part of the deployment process. This had a few drawbacks:</p>
 <ul>
 <li>Every time I changed my resume I had to redeploy the whole site.</li>
@@ -78,50 +146,32 @@
 </code></pre><p>Then you simply configure that as your project&rsquo;s custom domain under the repository settings, and add a new CNAME record to your DNS provider that directs the subdomain host (<code>resume</code>) to your GitHub Pages domain (<code>jordancrane.github.io.</code>). This is pretty simple, and GitHub also documents this well, but I was initially confused by the fact that it doesn&rsquo;t need to point directly to the project site.</p>
 <p>Now that I&rsquo;ve configured this, I can deploy my resume individually directly from it&rsquo;s repository, without deploying the entire site. Additionally I was able to remove the <code>docker-compose</code> step from the build process for the site, so I no longer have to deal with container conflicts from building it in multiple places. I&rsquo;m sure there are better ways still to do this, but I&rsquo;d be lying if I said the small quality of life improvements brought by this change don&rsquo;t bring me some joy. My next step is to move my deployment processes into GitHub Actions so I can get rid of my bad deploy scripts, but I&rsquo;ll save that for another day.</p>
 
-      </p>
-    </article>
+</div>
+<hr>
+<div class="columns buttons are-medium">
+  
+    <a href="https://blog.jordancrane.me/posts/2020/06/my-terminal-setup/" class="column button is-light">⬅️ </a>
+  
+  <a href="https://blog.jordancrane.me/" class="column button is-link is-light">🏠</a>
+  
+    <a href="https://blog.jordancrane.me/posts/2020/07/better-than-zoom/" class="column button is-light">➡️ </a>
+  
+</div>
 
-
-  </main>
-
-<footer>
-  <div class="footer_text">
-      <div>
-        <h3>Hi, <a href="https://jordancrane.me">I'm Jordan</a></h3>
-        <p>
-          I am a backend software engineer living in Portland, Oregon. I enjoy riding my bicycle, playing musical instruments (guitar and piano), and drawing.
-
-        </p>
       </div>
+    </section>
+  </section><footer class="footer">
+  <div class="content has-text-centered">
+    
+    
+    <p>
       
+      
+    </p>
+    
   </div>
-
-  
-    <div class="footer_copyright">
-      &copy; 2021 <a href="https://jordancrane.me">Jordan Crane</a>
-       - Made in Portland, OR
-    </div>
-  
 </footer>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.14/js/lightgallery-all.min.js" charset="utf-8"></script>
-    <script src="/js/weblog.js" charset="utf-8"></script>
-    
 
-    <script type="text/javascript">
-
-  
-  $(function() {
-    
-    $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?id=&format=json&jsoncallback=?", function(data) {
-      iweblog.application.displayImages(data, 8);
-    });
-  });
-
-</script>
-
-    
-  </body>
+</body>
 </html>
-

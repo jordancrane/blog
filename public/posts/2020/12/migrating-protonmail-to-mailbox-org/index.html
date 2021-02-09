@@ -1,73 +1,139 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jordan Crane">
-    <meta name="description" content="Personal blog of Jordan Crane.">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <meta name="generator" content="Hugo 0.80.0" />
+<html lang="en">
 
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
     
-    <title>Blog · Jordan Crane</title>
+    Migrating from ProtonMail to Mailbox.org
+     | Jordan Crane 
+  </title>
+  <link rel="stylesheet" href='https://blog.jordancrane.me/css/site.min.2ea495238efc1ab5397977e37efa658628ec1b7bec210f7b7cfe87402b5f069c9e51a94fc113ccb3591b64220b13a8f71f206698e2de667f49df05e80932e290.css' integrity='sha512-LqSVI478GrU5eXfjfvplhijsG3vsIQ97fP6HQCtfBpyeUalPwRPMs1kbZCILE6j3HyBmmOLeZn9J3wXoCTLikA=='>
+  <link rel="canonical" href="https://blog.jordancrane.me/posts/2020/12/migrating-protonmail-to-mailbox-org/">
+  <link rel="alternate" type="application/rss&#43;xml" href="https://blog.jordancrane.me/index.xml" title="Blog-Standard">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <meta name="author" content="Jordan Crane">
+  <meta name="description" content="A few years back I decided to switch from using a free email provider to a paid provider. This decision was driven by several factors, but the primary reasons were privacy concerns, and a desire for an email address with my domain name. I spent some time comparing different email providers, and settled on ProtonMail because they offered encryption at rest without any effort on my part, and they had a nicer iOS app than similar encrypted email providers.">
 
-    <link rel="stylesheet" href="https://blog.jordancrane.me/css/weblog.css" media="screen" charset="utf-8" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.14/css/lightgallery.min.css" type="text/css" />
-    
+  <meta property="og:title" content="Migrating from ProtonMail to Mailbox.org" />
+<meta property="og:description" content="A few years back I decided to switch from using a free email provider to a paid provider. This decision was driven by several factors, but the primary reasons were privacy concerns, and a desire for an email address with my domain name. I spent some time comparing different email providers, and settled on ProtonMail because they offered encryption at rest without any effort on my part, and they had a nicer iOS app than similar encrypted email providers." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.jordancrane.me/posts/2020/12/migrating-protonmail-to-mailbox-org/" />
+<meta property="article:published_time" content="2020-12-20T17:22:39-08:00" />
+<meta property="article:modified_time" content="2020-12-20T17:22:39-08:00" />
 
-
-    
-	<link href="https://blog.jordancrane.me/index.xml" rel="alternate" type="application/rss+xml" title="Blog" />
-	
-  </head>
-  <body class="site">
-
-<header>
-  <nav>
-    <h1><a href="https://jordancrane.me">Jordan Crane</a>’s Blog.</h1>
-    <div class="menu">
-		
-			
-			<ul>
-        <li><a href="/">Home</a></li>
-				
-				<li>
-					<a href="/posts/">Posts</a>
-					
-						<a href="/posts/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
-					
-				</li>
-				
-				<li>
-					<a href="/microposts/">Microposts</a>
-					
-						<a href="/microposts/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
-					
-				</li>
-				
-			</ul>
-		
+</head>
+<body><nav class="navbar is-transparent " role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a style="font-weight: 900;" class="navbar-item" href="https://blog.jordancrane.me/">
+      Blog-Standard
+    </a>
+  </div>
+  
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      
+      <a class="navbar-item" href="https://blog.jordancrane.me/tags/development/">
+        
+        Development
+        
+      </a>
+      
+      <a class="navbar-item" href="https://blog.jordancrane.me/tags/life/">
+        
+        Life
+        
+      </a>
+      
+      <a class="navbar-item" href="https://blog.jordancrane.me/tags/work/">
+        
+        Work
+        
+      </a>
+      
     </div>
-  </nav>
-</header>
-
-
-  <main class="content">
-
-    <article class="post">
+    
+    <div class="navbar-end">
       
-        <h2><a rel="full-article" href="https://blog.jordancrane.me/posts/2020/12/migrating-protonmail-to-mailbox-org/">Migrating from ProtonMail to Mailbox.org</a></h2>
-      
-
-      <div class="postmeta">Posted on <time datetime="2020-12-20 17:22:39 -0800 PST" pubdate="">December 20, 2020</time> in
-        <span class="categories">
+      <a class="navbar-item" href="https://github.com/jordancrane/" rel="noopener" target="_blank">
+        <span class="icon">
+          
+            <img alt="icons/svg/github.svg" src='https://blog.jordancrane.me/icons/svg/github.svg'>
           
         </span>
-      </div>
+      </a>
+      
+      <a class="navbar-item" href="https://linkedin.com/in/jordancrane" rel="noopener" target="_blank">
+        <span class="icon">
+          
+            <img alt="icons/svg/linkedin.svg" src='https://blog.jordancrane.me/icons/svg/linkedin.svg'>
+          
+        </span>
+      </a>
+      
+      <a class="navbar-item" href="https://www.instagram.com/jcrvne" rel="noopener" target="_blank">
+        <span class="icon">
+          
+            <img alt="icons/svg/instagram.svg" src='https://blog.jordancrane.me/icons/svg/instagram.svg'>
+          
+        </span>
+      </a>
+      
+      
+      <a class="navbar-item" href="mailto:jordan@jordancrane.me" target="_blank">
+        <span class="icon">
+          <img alt="email" src='https://blog.jordancrane.me/icons/svg/email.svg'>
+        </span>
+      </a>
+      
+      <a class="navbar-item" href="https://blog.jordancrane.me/index.xml" target="_blank">
+        <span class="icon">
+          <img alt="rss" src='https://blog.jordancrane.me/icons/svg/rss.svg'>
+        </span>
+      </a>
+      
+    </div>
+  </div>
+</nav>
 
-      <p>
-        <p>A few years back I decided to switch from using a free email provider to a paid provider. This decision was driven by several factors, but the primary reasons were privacy concerns, and a desire for an email address with my domain name. I spent some time comparing different email providers, and settled on ProtonMail because they offered encryption at rest without any effort on my part, and they had a nicer iOS app than similar encrypted email providers. Now after several years of using ProtonMail, I am revisiting that decision. My motivations for doing so are as follows.</p>
+  <section>
+    <section class='hero is-small is-link is-fullwidth'>
+      <div class="hero-body">
+<div class="container">
+  <h1 class="title">
+    Migrating from ProtonMail to Mailbox.org
+  </h1>
+  <h2 class="subtitle">
+    <time datetime='2020-12-20T17:22:39-08:00'>
+      December 20, 2020
+    </time>
+    
+    <br>
+    
+    
+    
+    <a class="tag is-link" href="https://blog.jordancrane.me/tags/development/">Development</a>
+    
+    
+    
+  </h2>
+</div>
+
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+<div id="content" class="content is-medium is-family-secondary">
+  <p>A few years back I decided to switch from using a free email provider to a paid provider. This decision was driven by several factors, but the primary reasons were privacy concerns, and a desire for an email address with my domain name. I spent some time comparing different email providers, and settled on ProtonMail because they offered encryption at rest without any effort on my part, and they had a nicer iOS app than similar encrypted email providers. Now after several years of using ProtonMail, I am revisiting that decision. My motivations for doing so are as follows.</p>
 <h2 id="the-reasons">The Reasons</h2>
 <p>The primary motivation for my decision to migrate was surprisingly trivial&mdash;a prime example of how a small annoyance, repeated many times, becomes a large annoyance. The ProtonMail iOS app, while nice, has one bug that drives me absolutely bonkers: you cannot import .ics files from the app into the iOS calendar. This means that anytime I would receive an invite to an event over email, I&rsquo;d have to either forward the email to my iCloud email address and import the event to my calendar from another mail app, or open the email on my computer to add it to my calendar (the horrors!). On the surface this seems relatively inconsequential, but as someone who is chronically forgetful of things that I don&rsquo;t write down, I found it to be a major hurdle to getting appointments and the like out of my inbox and into my calendar. Just that one extra step had a way of causing things to pile up in my inbox and create additional mental clutter. This issue has been brought to the attention of the ProtonMail team multiple times over the years and has still not been solved (see <a href="https://www.reddit.com/r/ProtonMail/comments/cnm7pn/cannot_add_ics_file_as_calendar_entry/?utm_source=share&amp;utm_medium=web2x&amp;context=3">this Reddit post</a>, <a href="https://www.reddit.com/r/ProtonMail/comments/jcbh9x/no_way_to_add_a_calendar_invite_from_email/?utm_source=share&amp;utm_medium=web2x&amp;context=3">another Reddit post</a>, and <a href="https://www.reddit.com/r/ProtonMail/comments/dikmxz/ios_ics_invites_not_updated_in_calendar/?utm_source=share&amp;utm_medium=web2x&amp;context=3">one more Reddit post</a>). Perhaps most concerning to me was the last post, in which they implied the &ldquo;solution&rdquo; was to subscribe to yet another ProtonMail service (ProtonCalendar). That sort of response made me feel like ProtonMail was more interested in getting me fully invested in their ecosystem than they were in making their product work properly as a standalone offering, which I found hugely unappealing.</p>
 <p>My second biggest reason considering an alternative provider was that the &ldquo;Plus&rdquo; tier of ProtonMail&rsquo;s offering doesn&rsquo;t offer a catch-all address. Maybe this was just a case of me not understanding how expensive this is to manage, but it seems that almost every other email provider&rsquo;s entry-level paid tier has this feature. ProtonMail&rsquo;s entry-level tier is far from cheap ($4.50/month billed yearly), and I didn&rsquo;t need any other features from their &ldquo;Professional&rdquo; tier, so it felt like a big jump to pay another $2/month just for that feature. For a comparison, Mailbox.org (the main alternative I was considering) offers a catch-all address for €1/month. Admittedly their offering is less security-focused, but a ~$3/month premium for said security seems a bit steep for not even offering feature-parity.</p>
@@ -78,50 +144,30 @@
 <p>To migrate my archived emails, first I setup my new Mailbox.org email address in Mail.app on my Mac (you can use Thunderbird or any other mail client, I&rsquo;m just a default kind of guy). I then used the ProtonMail <a href="https://protonmail.com/import-export">Import-Export Tool</a> to export all my emails into .mbox files on my computer. Once that completed, I imported the <code>Archive.mbox</code> file into my email client locally, and simply dragged all the emails from that folder into my Mailbox.org Archive folder. Syncing took a while (I had ~5,000 emails in my archive), but eventually it completed, and that was that. If you don&rsquo;t have a paid ProtonMail account (and thus don&rsquo;t have access to the Import-Export tool) you can also do this by just dragging the emails from your existing Archive folder to the new folder in your email client. I ran into some issues with this since my email client became confused by the fact that I had 2 email accounts with the same address. If you are taking this approach I would suggest exporting the Archive folder for your existing email before setting up your new email in your client of choice (in Mail.app you can do this by right-clicking on the folder you wish to export). Then remove your existing email address from your client before adding your new address.</p>
 <p>And that&rsquo;s it! I put this task off for a while because I thought it would be a giant pain, but in the end it was only a little bit of a pain. Now I live in a blissful world in which I can import .ics files into my calendar directly from my mobile email client.</p>
 
-      </p>
-    </article>
+</div>
+<hr>
+<div class="columns buttons are-medium">
+  
+    <a href="https://blog.jordancrane.me/posts/2020/07/zipcar-to-car-ownership/" class="column button is-light">⬅️ </a>
+  
+  <a href="https://blog.jordancrane.me/" class="column button is-link is-light">🏠</a>
+  
+</div>
 
-
-  </main>
-
-<footer>
-  <div class="footer_text">
-      <div>
-        <h3>Hi, <a href="https://jordancrane.me">I'm Jordan</a></h3>
-        <p>
-          I am a backend software engineer living in Portland, Oregon. I enjoy riding my bicycle, playing musical instruments (guitar and piano), and drawing.
-
-        </p>
       </div>
+    </section>
+  </section><footer class="footer">
+  <div class="content has-text-centered">
+    
+    
+    <p>
       
+      
+    </p>
+    
   </div>
-
-  
-    <div class="footer_copyright">
-      &copy; 2021 <a href="https://jordancrane.me">Jordan Crane</a>
-       - Made in Portland, OR
-    </div>
-  
 </footer>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.14/js/lightgallery-all.min.js" charset="utf-8"></script>
-    <script src="/js/weblog.js" charset="utf-8"></script>
-    
 
-    <script type="text/javascript">
-
-  
-  $(function() {
-    
-    $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?id=&format=json&jsoncallback=?", function(data) {
-      iweblog.application.displayImages(data, 8);
-    });
-  });
-
-</script>
-
-    
-  </body>
+</body>
 </html>
-
