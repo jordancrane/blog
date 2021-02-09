@@ -1,54 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Blog</title>
+    <title>Tags on Blog-Standard</title>
     <link>https://blog.jordancrane.me/tags/</link>
-    <description>Recent content in Tags on Blog</description>
+    <description>Recent content in Tags on Blog-Standard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Dec 2020 17:22:39 -0800</lastBuildDate><atom:link href="https://blog.jordancrane.me/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>email</title>
-      <link>https://blog.jordancrane.me/tags/email/</link>
+      <title>Development</title>
+      <link>https://blog.jordancrane.me/tags/development/</link>
       <pubDate>Sun, 20 Dec 2020 17:22:39 -0800</pubDate>
       
-      <guid>https://blog.jordancrane.me/tags/email/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>collaboration</title>
-      <link>https://blog.jordancrane.me/tags/collaboration/</link>
-      <pubDate>Fri, 03 Jul 2020 20:44:28 -0700</pubDate>
-      
-      <guid>https://blog.jordancrane.me/tags/collaboration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>remote work</title>
-      <link>https://blog.jordancrane.me/tags/remote-work/</link>
-      <pubDate>Fri, 03 Jul 2020 20:44:28 -0700</pubDate>
-      
-      <guid>https://blog.jordancrane.me/tags/remote-work/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blog</title>
-      <link>https://blog.jordancrane.me/tags/blog/</link>
-      <pubDate>Tue, 30 Jun 2020 19:15:15 -0700</pubDate>
-      
-      <guid>https://blog.jordancrane.me/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>development</title>
-      <link>https://blog.jordancrane.me/tags/development/</link>
-      <pubDate>Sat, 06 Jun 2020 20:00:25 -0700</pubDate>
-      
       <guid>https://blog.jordancrane.me/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>https://blog.jordancrane.me/tags/life/</link>
+      <pubDate>Tue, 28 Jul 2020 12:26:07 -0700</pubDate>
+      
+      <guid>https://blog.jordancrane.me/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Work</title>
+      <link>https://blog.jordancrane.me/tags/work/</link>
+      <pubDate>Fri, 03 Jul 2020 20:44:28 -0700</pubDate>
+      
+      <guid>https://blog.jordancrane.me/tags/work/</guid>
       <description></description>
     </item>
     

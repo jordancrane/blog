@@ -8,7 +8,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jordancrane.me/tags/email/</loc>
+    <loc>https://blog.jordancrane.me/tags/development/</loc>
     <lastmod>2020-12-20T17:22:39-08:00</lastmod>
   </url>
   
@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>https://blog.jordancrane.me/tags/life/</loc>
+    <lastmod>2020-07-28T12:26:07-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.jordancrane.me/microposts/2020/07/20/181020/</loc>
     <lastmod>2020-07-19T18:10:21-07:00</lastmod>
   </url>
@@ -48,28 +53,13 @@
   </url>
   
   <url>
-    <loc>https://blog.jordancrane.me/tags/collaboration/</loc>
+    <loc>https://blog.jordancrane.me/tags/work/</loc>
     <lastmod>2020-07-03T20:44:28-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jordancrane.me/tags/remote-work/</loc>
-    <lastmod>2020-07-03T20:44:28-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jordancrane.me/tags/blog/</loc>
-    <lastmod>2020-06-30T19:15:15-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jordancrane.me/posts/2020/06/github-pages-user-site-project-subdomains/</loc>
     <lastmod>2020-06-30T19:15:15-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jordancrane.me/tags/development/</loc>
-    <lastmod>2020-06-06T20:00:25-07:00</lastmod>
   </url>
   
   <url>
@@ -79,10 +69,6 @@
   
   <url>
     <loc>https://blog.jordancrane.me/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.jordancrane.me/series/</loc>
   </url>
   
 </urlset>
