@@ -1,8 +1,10 @@
 <nav class="navbar is-transparent {{ if .Page.IsHome }}is-hidden-touch{{end}}" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a style="font-weight: 900;" class="navbar-item" href="{{ $.Site.Home.Permalink }}">
-      {{ $.Site.Title }}
-    </a>
+    {{ if .Page.IsHome }}
+    <a style="font-weight: 900;" class="navbar-item" href="{{ $.Site.Home.Permalink }}">❯ {{ $.Site.Title }}</a>
+    {{ else }}
+    <a style="font-weight: 900;" class="navbar-item has-text-{{ default "info" $.Site.Params.hero_colour }}" href="{{ $.Site.Home.Permalink }}">❮ {{ $.Site.Title }}</a>
+    {{ end }}
   </div>
   
   <div class="navbar-menu">

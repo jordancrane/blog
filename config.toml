@@ -1,6 +1,6 @@
 baseurl = "https://blog.jordancrane.me/"
 languageCode = "en-us"
-title = "Blog-Standard"
+title = "jordancrane/blog"
 theme = "bare"
 pygmentsstyle = "emacs"
 Paginate = 10
