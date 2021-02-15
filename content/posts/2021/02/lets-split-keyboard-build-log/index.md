@@ -103,11 +103,19 @@ Next I tried to just flash the firmware, but I got some error messages indicatin
 $ make git-submodule
 ```
 
-Now we're _almost_ ready to flash. The last thing we need to do is make a few tweaks to the firmware configuration. To use the Atmel DFU bootloader instead of Caterina, open up `rules.mk` in any text editor (this step and the next don't need to be run inside the vagrant terminal):
+Now we're _almost_ ready to flash. The last thing we need to do is make a few tweaks to the firmware configuration. Instead of making changes to an existing keymap, we'll copy the default keymap and make our changes there; that way we can make further tweaks later. I named my new keymap `jcrane` and will be referring to it as such in the commands, but you can obviously choose whatever name you like. We'll also need to copy `rules.mk` from the keyboard root into the new keymap folder, since some tweaks are required there as well.
 
 ```
 # On host machine in ~/qmk_firmware
-$ vim keyboards/lets_split/rules.mk
+$ cp -r keyboards/lets_split/keymaps/default keyboards/lets_split/keymaps/jcrane
+$ cp keyboards/lets_split/rules.mk keyboards/lets_split/keymaps/jcrane/
+```
+
+To use the Atmel DFU bootloader instead of Caterina, open up `rules.mk` in any text editor (this step and the next don't need to be run inside the vagrant terminal):
+
+```
+# On host machine in ~/qmk_firmware/keyboards/lets_split/keymaps/jcrane
+$ vim rules.mk
 ```
 
 Then set the value of `BOOTLOADER` to `atmel-dfu`: 
@@ -117,26 +125,28 @@ Then set the value of `BOOTLOADER` to `atmel-dfu`:
 Next, to support either half of the board acting as the primary, we need to enable `EE_HANDS` in `config.h`:
 
 ```
-# On host machine in ~/qmk_firmware
-host$ echo "#define EE_HANDS" >> keyboards/lets_split/config.h
+# On host machine in ~/qmk_firmware/keyboards/lets_split/keymaps/jcrane
+host$ echo "#define EE_HANDS" >> config.h
 ```
+
+**NOTE:** There are a few other tweaks required for boards that have RGB underglow, which will be detailed in a later section. I would recommend making these tweaks before assembly, since they can cause the board to enter a state that requires the microcontrollers to be reset manually (by shorting the GND and RST pins). This is annoying to do after assembly, since you will have to take the case apart.
 
 Now on to the main event! QMK uses `make` to build and flash the microcontroller. The format of the make command is as follows:
 
 ```
-make $KEYBOARD/$REVISION:$KEYMAP:$TARGET
+make $PROJECT_NAME:$KEYMAP[:$TARGET]
 ```
 
-For now we're just going to flash the default keymap---we can come back and customize it later. In order for `EE_HANDS` to work properly, we'll need to designate one of our microcontrollers as the left hand side and the other as the right hand side by targeting `dfu-split-left` and `dfu-split-right`, so choose which one will be which and label the bag or find some other way to keep track of which is which. Then, plug in each microcontroller and run the following commands for the left and right sides respectively (inside the vagrant terminal):
+For now we're just going to flash the copied default keymap---we can come back and customize it later. In order for `EE_HANDS` to work properly, we'll need to designate one of our microcontrollers as the left hand side and the other as the right hand side by targeting `dfu-split-left` and `dfu-split-right`, so choose which one will be which and label the bag or find some other way to keep track of which is which. Then, plug in each microcontroller and run the following commands for the left and right sides respectively (inside the vagrant terminal):
 
 ```
 # On VM in /vagrant
 
 # For the left half
-vagrant$ make let_split/rev2:default:dfu-split-left
+vagrant$ make let_split/rev2:jcrane:dfu-split-left
 
 # For the right half
-vagrant$ make let_split/rev2:default:dfu-split-right
+vagrant$ make let_split/rev2:jcrane:dfu-split-right
 ```
 
 Now when we plug in each controller and navigate to the system keyboard settings, we should see "Lets Split v2" in the drop down. 
@@ -149,27 +159,46 @@ Success!
 
 **NOTE:** Before beginning assembly of the PCB, follow the flashing instructions above to flash the microcontrollers. We want to ensure they aren't duds, since desoldering them is allegedly a PITA.
 
-First, solder on the diodes and TRRS jacks (make sure to do it on the right side of the board for each half, they should be mirrored).
+To be completely honest, I totally forgot to take any pictures during this part of the process. I was streaming the build and it just sort of slipped my mind. That said, the steps in the guide linked above are very thorough and anything I did would likely be redundant. For a short overview of the steps:
 
-Then, attach the microcontroller headers.
+1. Solder on the diodes and TRRS jacks (make sure to do it on the right side of the board for each half, they should be mirrored).
+2. Solder the jumpers below the TRRS jacks into the proper configuration---this is one area in which I think the guide could use some clarification. It says to solder the jumpers in the following configuration and to do both PCBs the same:
 
-Next, place the top plate over the PCB and solder in a switch on each corner, and the two switches whose pins reside under the microcontroller.
+```
+VCC [x]     [ ] VCC
+    [x]     [x]
+GND [ ]     [x] GND
+```
+For whatever reason I found this very confusing and had to seek out some pictures for clarification, but in essence: when looking at the bottom of either PCB (that is the side with the TRRS jack on it) when the TRRS jack is facing upwards the jumpers should look like the above diagram, they should NOT be mirrored. If that explanation is still subpar, just refer to this image from the guide, which has the jumpers both soldered in the correct configuration:
 
-Lastly, solder in the microcontrollers and the rest of the switches.
+![Correct jumper configuration, from the guide](https://camo.githubusercontent.com/16c1c30cca3f627a293da3ed7a16f917f54563547bfe771e91e1c3fda976f0d7/687474703a2f2f692e696d6775722e636f6d2f72346b4d4253462e6a7067)
+
+3. Attach the microcontroller headers.
+4. Place the top plate over the PCB and solder in a switch on each corner, and the two switches whose pins reside under the microcontroller.
+5. Solder in the microcontrollers and the rest of the switches.
 
 ## Adding RGB Lighting
 
 This is one place where the guide is outdated. It suggests running the lighting signal through the TRRS cable, but this would mean only one half could run the lighting. To support either half acting as primary with lighting, I followed the [instructions](https://beta.docs.qmk.fm/using-qmk/hardware-features/feature_split_keyboard#additional-resources) from QMK. Basically, attach VCC and GND on the board to the corresponding pins on the LED strip, and then connect the TX0 pin on each microcontroller to the DIN pin on the LED strip. If you split the strip into multiple parts, just connect the VCC and GND from piece to piece, and DO to DIN.
 
-In order to support split RGB lighting, we'll need to make one more tweak to the firmware and reflash. To do so, we'll add the `RGBLED_SPLIT` setting to `config.h`:
+In order to support split RGB lighting, we'll need to make one more tweak to the firmware and reflash. To do so, we'll need to add a few more defines in `config.h`:
 
 ```
-$ echo "#define RGBLED_SPLIT { 6, 6 }" >> keyboards/lets_split/config.h
+# On host machine in ~/qmk_firmware/keyboards/lets_split/keymaps/jcrane
+$ vim config.h
 ```
 
-The numbers indicate the number of LEDs on each half. I used 6 LEDs on each, hence the `{ 6, 6 }`.
+```
+# config.h
+...
 
-We'll also need to set `RGBLIGHT_ENABLE` to `true` in `rules.mk`.
+#define RGBLED_SPLIT { 6, 6 }
+#define RGBLIGHT_ANIMATIONS
+```
+
+The numbers indicate the number of LEDs on each half. I used 6 LEDs on each, hence the `{ 6, 6 }`. It's important to do this before closing up the case, since it causes the two halves of the keyboard to be unable to communicate with one another until it is set on both halves. Since the default keymap requires both halves of the keyboard to reach the `RESET` key, this is an inconvenient side effect once the case is closed. 
+
+We'll also need to set `RGBLIGHT_ENABLE` to `yes` in `rules.mk`.
 
 ## Finished Product
 
