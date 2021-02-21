@@ -5,11 +5,11 @@ draft: true
 tags: ["Life", "Keyboards"]
 ---
 
-![An ErgoDox EZ split keyboard and a trackpad on a desk](ergodox.png)
+![Let's split keyboard sitting on a desk](left-primary.jpeg)
 
-For going on three years now I've been a faithful [ErgoDox EZ](https://ergodox-ez.com/) user and evangalist. At first I didn't understand why I would possibly want to spend several hundred dollars on keyboard _parts_ and then still have to put them all together using several hundred dollars worth of tools, when I could spend the same amount (or realistically, less) and get a pre-made solution that works out of the box. But, as time has passed, my opinions on the ideal keyboard layout have grown gradually stronger (as I assume they tend to once you start using a programmable keyboard), and I'm finding myself wishing for configurations that aren't offered in a commercially manufactured keyboard. Namely, I'm plagued by two opinions which are inconvenient when held in tandem: firstly, that the ErgoDox has _too many keys_; and secondly, that split keyboards are _intrinsically superior_ to traditional keyboards. Since there aren't any commercially available split mechanical keyboards with substantially fewer keys than the ErgoDox (to my knowledge at least), this meant that to scratch this itch I was going to have to seek out a custom solution. I've always found the [Planck](https://olkb.com/collections/planck) keyboard to be an aesthetically pleasing keyboard---something about its symmetry and uniformity speaks to me, and it does away with the useless top row and 1u thumb cluster keys that plague the ErgoDox (seriously who uses these and what do their thumbs look like?)
+For going on three years now I've been a faithful [ErgoDox EZ](https://ergodox-ez.com/) user and evangelist. At first I didn't understand why I would possibly want to spend several hundred dollars on keyboard _parts_ and then still have to put them all together using several hundred dollars worth of tools, when I could spend the same amount (or realistically, less) and get a pre-made solution that works out of the box. But, as time has passed, my opinions on the ideal keyboard layout have grown gradually stronger (as I assume they tend to once you start using a programmable keyboard), and I'm finding myself wishing for configurations that aren't offered in a commercially manufactured keyboard. Namely, I'm plagued by two opinions which are inconvenient when held in tandem: firstly, that the ErgoDox has _too many keys_; and secondly, that split keyboards are _intrinsically superior_ to traditional keyboards. Since there aren't any commercially available split mechanical keyboards with substantially fewer keys than the ErgoDox (to my knowledge at least), this meant that to scratch this itch I was going to have to seek out a custom solution. I've always found the [Planck](https://olkb.com/collections/planck) keyboard to be an aesthetically pleasing keyboard---something about its symmetry and uniformity speaks to me, and it does away with the useless top row and 1u thumb cluster keys that plague the ErgoDox (seriously who uses these and what do their thumbs look like?)
 
-![Useless ErgoDox keys, highlighted in red](useless-keys.png)
+![Useless ErgoDox keys, highlighted in red](useless-keys.jpeg)
 
 So when I found out that there existed a split version of the Planck called the Let's Split, I knew it was the one. Maybe not the one forever, but at least be the one I want to build first (I can already tell this is going to be a rabbit hole).
 
@@ -17,7 +17,7 @@ Having explained all that, here is a list of the requirements I was hoping to me
 
 - Split keyboard
 - About 40% size (QWERTY keys plus an outer row on each side and a bottom row---48 keys)
-- Quiet(er) operation (to facilitate working in coffee shops/coworking spaces post-COVID)
+- Quiet(er) operation (to facilitate working in coffee shops/co-working spaces post-COVID)
 - Robust enough to throw in a backpack
 - USB-C port for easy MacBook compatibility
 - Either side can act as primary (plugging the right or left half into the computer both work)
@@ -28,7 +28,7 @@ For the most part I followed the very well-done Let's Split [build guide](https:
 
 ## Parts List
 
-![All the supplies for the build except the PCB, spread out on a desk](everything-but-the-pcb.png)
+![All the supplies for the build except the PCB, spread out on a desk](everything-but-the-pcb.jpeg)
 
 - Case (linked in previous section)
 - [PCB](https://spacecat.design/collections/pcbs-cases-kits/products/lets-split-pcbs)
@@ -50,11 +50,11 @@ For the most part I followed the very well-done Let's Split [build guide](https:
 
 I did this first as a test fit because it got here first and I'm impatient. There is a ton of plastic backing that needs to be peeled off, which sounds fun but in reality is frustrating and really messed up my finger nails. 
 
-![A pile of plastic backing](plastic-backing.png "Plastic Backing")
+![A pile of plastic backing](plastic-backing.jpeg "Plastic Backing")
 
 The approach I took was to fasten the standoffs to the top plate and then stack the middle layers onto that, before attaching the bottom layer.
 
-![A collage of the case being assembled](case-assembly.png)
+![A collage of the case being assembled](case-assembly.jpeg)
 
 In retrospect I probably should have fastened them to the bottom plate first instead, since I'll have to take the top plate off for assembly, and that will be difficult to do since the standoffs won't be anchored to the bottom plate and will turn freely. Live and learn I suppose.
 
@@ -162,16 +162,15 @@ Success!
 To be completely honest, I totally forgot to take any pictures during this part of the process. I was streaming the build and it just sort of slipped my mind. That said, the steps in the guide linked above are very thorough and anything I did would likely be redundant. For a short overview of the steps:
 
 1. Solder on the diodes and TRRS jacks (make sure to do it on the right side of the board for each half, they should be mirrored).
-2. Solder the jumpers below the TRRS jacks into the proper configuration---this is one area in which I think the guide could use some clarification. It says to solder the jumpers in the following configuration and to do both PCBs the same:
-
+2. Solder the jumpers below the TRRS jacks into the proper configuration---this is one area in which I think the guide could use some clarification. It says to solder the jumpers in the following configuration and to do both PCBs the same: 
 ```
 VCC [x]     [ ] VCC
     [x]     [x]
 GND [ ]     [x] GND
 ```
-For whatever reason I found this very confusing and had to seek out some pictures for clarification, but in essence: when looking at the bottom of either PCB (that is the side with the TRRS jack on it) when the TRRS jack is facing upwards the jumpers should look like the above diagram, they should NOT be mirrored. If that explanation is still subpar, just refer to this image from the guide, which has the jumpers both soldered in the correct configuration:
+For whatever reason I found this very confusing and had to seek out some pictures for clarification, but in essence: when looking at the bottom of either PCB (that is the side with the TRRS jack on it) when the TRRS jack is facing upwards the jumpers should look like the above diagram, they should NOT be mirrored. If that explanation is still subpar, just refer to this image, which has the jumpers both soldered in the correct configuration:
 
-![Correct jumper configuration, from the guide](https://camo.githubusercontent.com/16c1c30cca3f627a293da3ed7a16f917f54563547bfe771e91e1c3fda976f0d7/687474703a2f2f692e696d6775722e636f6d2f72346b4d4253462e6a7067)
+![Correct jumper configuration](finished.jpeg)
 
 3. Attach the microcontroller headers.
 4. Place the top plate over the PCB and solder in a switch on each corner, and the two switches whose pins reside under the microcontroller.
@@ -202,8 +201,21 @@ We'll also need to set `RGBLIGHT_ENABLE` to `yes` in `rules.mk`.
 
 ## Finished Product
 
+Here's what the finished keyboard looks like:
+
+![Assembled keyboard, unplugged](keyboard.jpeg)
+![Assembled keyboard, unplugged](top-down.jpeg)
+![Assembled keyboard, right side plugged in, illuminated](right-primary.jpeg)
+![Assembled keyboard, left side plugged in, illuminated](left-primary.jpeg)
+
+As you can see, both sides are capable of acting as the primary with illumination. Mission accomplished!
+
 ## Retrospective
 
-The 68g Boba U4 switches are the heaviest I've ever used---I got a switch tester and really liked the 70g [Gateron Aliaz](https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile) switches, but was unable to find them in stock anywhere, so bought them as a switch that was touted to be somewhat similar. Whether or not I should have gone with the 62g variant instead remains to be seen, since they feel quite a bit heavier than the Aliaz 70g to my hand (probably due to a significantly larger tactile bump). I decided to lube the switches prior to my build to see if this reduced their precieved heaviness (TODO: resolve this thought after lubing).
+I'm typing this conclusion on my ErgoDox, which tells you about how well my replacement mission went. The Let's Split did not turn out to be my keyboard to end all keyboards, or even my new daily driver. That's not to say that I am unhappy with how it turned out, as quite the contrary is true. Rather, I simply find the typing experience to be inferior to that of the ErgoDox for a number of reasons.
 
-TODO: talk about ergo vs ortho layout
+My primary complaint is that the layout is significantly less comfortable for my (somewhat large) hands. My fingers vary fairly drastically in length, so the transition from an ergo layout (columns are staggered) to an ortholinear layout (columns are aligned) was rather jarring. I found the lower middle finger keys and upper pinky keys especially problematic. Additionally, having all the thumb keys huddled under my palms instead of offset gave me hand cramps by the end of the workday that I spent testing the board.
+
+Another factor is that the 68g Boba U4 switches are the heaviest I've ever used---I got a switch tester and really liked the 70g [Gateron Aliaz](https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile) switches, but was unable to find them in stock anywhere, so bought the Bobas as a switch that would potentially offer a similar feel. I think that I probably should have gone with the 62g variant, since they feel quite a bit heavier than the Aliaz 70g to my hand (probably due to a significantly larger tactile bump). I decided to lube the switches prior to my build to see if this reduced their perceived heaviness, which it did to some degree, but they are still a very tactile switch. I'm beginning to think that I'm just not that into tactile switches, and I'll probably try some linear switches for my next build.
+
+All in all, I had a lot of fun building the board and I'm glad that I did it. I'm happy with how it turned out, and even though I won't be using it as a daily driver, I think it could serve well as a portable board. It is very quiet, very small, and looks cool as hell (certified bias-free opinion). It has also taught me a lot about what I want in my next board---I'm thinking a 36 key ergo board like the [Akufu36](https://www.thingiverse.com/thing:4593582) or [Arch-36](https://github.com/obosob/arch-36-case).
