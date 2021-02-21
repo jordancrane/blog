@@ -24,7 +24,11 @@ Having explained all that, here is a list of the requirements I was hoping to me
 
 ## Build Notes
 
-For the most part I followed the excellent Let's Split [build guide](https://github.com/nicinabox/lets-split-guide), with a few notable exceptions. Instead of using the open sandwich case prescribed in the guide, I chose to use the closed sandwich design available [here](https://github.com/nooges/lets-split-v2-case), to improve the backpack-robustness factor. One important note on this point---in order to use a case material that is not the same on both sides (I used matte clear acrylic, which only has a matte finish on one side) I used the modified design from [this PR](https://github.com/nooges/lets-split-v2-case/pull/3). It flips half of the top and bottom plates; otherwise one side of the keyboard will have the smooth side facing out, and the other side will have the matte side facing out. The other change I made was to use the [Elite-C v4](https://www.reddit.com/r/MechanicalKeyboards/comments/9qguhx/news_announcing_the_elitec_a_better_pro_micro/) instead of the [Pro Micro](https://www.sparkfun.com/products/12640), because my desire for USB-C was stronger than my desire to not spend 2x as much money on microcontrollers. I also have not soldered since college and I am relearning it for this project, so it may not be the prettiest (I'm writing this ahead of the assembly, so we'll find out together). I'm using leaded solder because I've heard it's easier to work with as a beginner, and I plan to just do a thorough desk cleaning post-assembly.
+For the most part I followed the excellent Let's Split [build guide](https://github.com/nicinabox/lets-split-guide), with a few notable exceptions.
+
+Instead of using the open sandwich case prescribed in the guide, I chose to use the closed sandwich design available [here](https://github.com/nooges/lets-split-v2-case), to improve the backpack-robustness factor. One important note on this point---in order to use a case material that is not the same on both sides (I used matte clear acrylic, which only has a matte finish on one side) I used the modified design from [this PR](https://github.com/nooges/lets-split-v2-case/pull/3). It flips half of the top and bottom plates; otherwise one side of the keyboard will have the smooth side facing out, and the other side will have the matte side facing out.
+
+The other change I made was to use the [Elite-C v4](https://www.reddit.com/r/MechanicalKeyboards/comments/9qguhx/news_announcing_the_elitec_a_better_pro_micro/) instead of the [Pro Micro](https://www.sparkfun.com/products/12640), because my desire for USB-C was stronger than my desire to not spend 2x as much money on microcontrollers. I also have not soldered since college and I am relearning it for this project, so it may not be the prettiest (I'm writing this ahead of the assembly, so we'll find out together). I'm using leaded solder because I've heard it's easier to work with as a beginner, and I plan to just do a thorough desk cleaning post-assembly.
 
 ## Parts List
 
@@ -109,7 +113,11 @@ Next I tried to just flash the firmware, but I got some error messages indicatin
 $ make git-submodule
 ```
 
-Now we're _almost_ ready to flash. The last thing we need to do is make a few tweaks to the firmware configuration. Instead of making changes to an existing keymap, we'll copy the default keymap and make our changes there; that way we can make further tweaks later. I named my new keymap `jcrane` and will be referring to it as such in the commands, but you can obviously choose whatever name you like. We'll also need to copy `rules.mk` from the keyboard root into the new keymap folder, since some tweaks are required there as well.
+Now we're _almost_ ready to flash. The last thing we need to do is make a few tweaks to the firmware configuration.
+
+Instead of making changes to an existing keymap, we'll copy the default keymap and make our changes there; that way we can make further tweaks later. I named my new keymap `jcrane` and will be referring to it as such in the commands, but you can obviously choose whatever name you like.
+
+We'll also need to copy `rules.mk` from the keyboard root into the new keymap folder, since some tweaks are required there as well.
 
 ```
 # On host machine in ~/qmk_firmware
@@ -143,7 +151,9 @@ Now on to the main event! QMK uses `make` to build and flash the microcontroller
 make $PROJECT_NAME:$KEYMAP[:$TARGET]
 ```
 
-For now we're just going to flash the copied default keymap---we can come back and customize it later. In order for `EE_HANDS` to work properly, we'll need to designate one of our microcontrollers as the left hand side and the other as the right hand side by targeting `dfu-split-left` and `dfu-split-right`, so choose which one will be which and label the bag or find some other way to distinguish them. Then, plug in each microcontroller and run the following commands for the left and right sides respectively (inside the vagrant terminal):
+For now we're just going to flash the copied default keymap---we can come back and customize it later.
+
+In order for `EE_HANDS` to work properly, we'll need to designate one of our microcontrollers as the left hand side and the other as the right hand side by targeting `dfu-split-left` and `dfu-split-right`, so choose which one will be which and label the bag or find some other way to distinguish them. Then, plug in each microcontroller and run the following commands for the left and right sides respectively (inside the vagrant terminal):
 
 ```
 # On VM in /vagrant
