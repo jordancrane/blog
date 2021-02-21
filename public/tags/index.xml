@@ -6,22 +6,31 @@
     <description>Recent content in Tags on jordancrane/blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Dec 2020 17:22:39 -0800</lastBuildDate><atom:link href="https://blog.jordancrane.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Feb 2021 12:10:41 -0800</lastBuildDate><atom:link href="https://blog.jordancrane.me/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Development</title>
-      <link>https://blog.jordancrane.me/tags/development/</link>
-      <pubDate>Sun, 20 Dec 2020 17:22:39 -0800</pubDate>
+      <title>Keyboards</title>
+      <link>https://blog.jordancrane.me/tags/keyboards/</link>
+      <pubDate>Sun, 21 Feb 2021 12:10:41 -0800</pubDate>
       
-      <guid>https://blog.jordancrane.me/tags/development/</guid>
+      <guid>https://blog.jordancrane.me/tags/keyboards/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Life</title>
       <link>https://blog.jordancrane.me/tags/life/</link>
-      <pubDate>Tue, 28 Jul 2020 12:26:07 -0700</pubDate>
+      <pubDate>Sun, 21 Feb 2021 12:10:41 -0800</pubDate>
       
       <guid>https://blog.jordancrane.me/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://blog.jordancrane.me/tags/development/</link>
+      <pubDate>Sun, 20 Dec 2020 17:22:39 -0800</pubDate>
+      
+      <guid>https://blog.jordancrane.me/tags/development/</guid>
       <description></description>
     </item>
     

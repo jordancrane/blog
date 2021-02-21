@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.jordancrane.me/tags/development/</loc>
-    <lastmod>2020-12-20T17:22:39-08:00</lastmod>
+    <loc>https://blog.jordancrane.me/</loc>
+    <lastmod>2021-02-21T12:10:41-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.jordancrane.me/</loc>
+    <loc>https://blog.jordancrane.me/tags/keyboards/</loc>
+    <lastmod>2021-02-21T12:10:41-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jordancrane.me/posts/2021/02/lets-split-keyboard-build-log/</loc>
+    <lastmod>2021-02-21T12:10:41-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jordancrane.me/tags/life/</loc>
+    <lastmod>2021-02-21T12:10:41-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jordancrane.me/posts/</loc>
+    <lastmod>2021-02-21T12:10:41-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jordancrane.me/tags/</loc>
+    <lastmod>2021-02-21T12:10:41-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jordancrane.me/tags/development/</loc>
     <lastmod>2020-12-20T17:22:39-08:00</lastmod>
   </url>
   
@@ -18,22 +43,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jordancrane.me/posts/</loc>
-    <lastmod>2020-12-20T17:22:39-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jordancrane.me/tags/</loc>
-    <lastmod>2020-12-20T17:22:39-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.jordancrane.me/posts/2020/07/zipcar-to-car-ownership/</loc>
-    <lastmod>2020-07-28T12:26:07-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jordancrane.me/tags/life/</loc>
     <lastmod>2020-07-28T12:26:07-07:00</lastmod>
   </url>
   
