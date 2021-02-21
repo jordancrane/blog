@@ -1,17 +1,17 @@
 ---
 title: "Let's Split Build Log (My First Mechanical Keyboard Build)"
-date: 2021-02-06T13:10:41-08:00
-draft: true
+date: 2021-02-21T12:10:41-08:00
+draft: false
 tags: ["Life", "Keyboards"]
 ---
 
 ![Let's split keyboard sitting on a desk](left-primary.jpeg)
 
-For going on three years now I've been a faithful [ErgoDox EZ](https://ergodox-ez.com/) user and evangelist. At first I didn't understand why I would possibly want to spend several hundred dollars on keyboard _parts_ and then still have to put them all together using several hundred dollars worth of tools, when I could spend the same amount (or realistically, less) and get a pre-made solution that works out of the box. But, as time has passed, my opinions on the ideal keyboard layout have grown gradually stronger (as I assume they tend to once you start using a programmable keyboard), and I'm finding myself wishing for configurations that aren't offered in a commercially manufactured keyboard. Namely, I'm plagued by two opinions which are inconvenient when held in tandem: firstly, that the ErgoDox has _too many keys_; and secondly, that split keyboards are _intrinsically superior_ to traditional keyboards. Since there aren't any commercially available split mechanical keyboards with substantially fewer keys than the ErgoDox (to my knowledge at least), this meant that to scratch this itch I was going to have to seek out a custom solution. I've always found the [Planck](https://olkb.com/collections/planck) keyboard to be an aesthetically pleasing keyboard---something about its symmetry and uniformity speaks to me, and it does away with the useless top row and 1u thumb cluster keys that plague the ErgoDox (seriously who uses these and what do their thumbs look like?)
+I first became interested in mechanical keyboards back in high school (because you _need_ n-key rollover to win at Minecraft) but it wasn't until around three years ago that I became interested in keyboards that deviate from the standard layout. For nearly that entire time I've been a faithful [ErgoDox EZ](https://ergodox-ez.com/) user and evangelist. It's always available, highly configurable, and user friendly. All things considered it's an excellent keyboard that any reasonable person would be completely satisfied with. I, however, am not a reasonable person. As time has passed I have become bothered by a trivial complaint: the ErgoDox has _too many keys_. Seriously who uses these and what do their thumbs look like?
 
 ![Useless ErgoDox keys, highlighted in red](useless-keys.jpeg)
 
-So when I found out that there existed a split version of the Planck called the Let's Split, I knew it was the one. Maybe not the one forever, but at least be the one I want to build first (I can already tell this is going to be a rabbit hole).
+Do these keys interfere with my use of the keyboard? Literally not at all. They _do_ interfere with my aesthetic sensibility though, and so I set out to find an alternative. I've always found the [Planck](https://olkb.com/collections/planck) keyboard to be aesthetically pleasing---something about its symmetry and uniformity speaks to me. So when I found out that a split version of the Planck called the Let's Split exists, I knew it was the one. Maybe not the one forever, but at least be the one I want to build first (I can already tell this is going to be a rabbit hole).
 
 Having explained all that, here is a list of the requirements I was hoping to meet with this build:
 
@@ -24,7 +24,7 @@ Having explained all that, here is a list of the requirements I was hoping to me
 
 ## Build Notes
 
-For the most part I followed the very well-done Let's Split [build guide](https://github.com/nicinabox/lets-split-guide), with a few notable exceptions. Instead of using the open sandwich case prescribed in the guide, I chose to use the closed sandwich design available [here](https://github.com/nooges/lets-split-v2-case), to improve the backpack-robustness factor. One important note on this point---in order to use a case material that is not the same on both sides (I used matte clear acrylic, which only has a matte finish on one side) I used the modified design from [this PR](https://github.com/nooges/lets-split-v2-case/pull/3), which flips half of the top and bottom plates---otherwise one side of the keyboard will be smooth side facing out, and the other side will have the matte side facing out. The other change I made was to use the [Elite-C v4](https://www.reddit.com/r/MechanicalKeyboards/comments/9qguhx/news_announcing_the_elitec_a_better_pro_micro/) instead of the [Pro Micro](https://www.sparkfun.com/products/12640), because my desire for USB-C was stronger than my desire to not spend 2x as much money on microcontrollers. I also have not soldered since college so I am relearning it for this project, so it may not be the prettiest (I'm writing this ahead of the assembly, so we'll find out together). I'm using leaded solder because I've heard it's easier to work with as a beginner, and I plan to just do a thorough desk cleaning post-assembly.
+For the most part I followed the excellent Let's Split [build guide](https://github.com/nicinabox/lets-split-guide), with a few notable exceptions. Instead of using the open sandwich case prescribed in the guide, I chose to use the closed sandwich design available [here](https://github.com/nooges/lets-split-v2-case), to improve the backpack-robustness factor. One important note on this point---in order to use a case material that is not the same on both sides (I used matte clear acrylic, which only has a matte finish on one side) I used the modified design from [this PR](https://github.com/nooges/lets-split-v2-case/pull/3). It flips half of the top and bottom plates; otherwise one side of the keyboard will have the smooth side facing out, and the other side will have the matte side facing out. The other change I made was to use the [Elite-C v4](https://www.reddit.com/r/MechanicalKeyboards/comments/9qguhx/news_announcing_the_elitec_a_better_pro_micro/) instead of the [Pro Micro](https://www.sparkfun.com/products/12640), because my desire for USB-C was stronger than my desire to not spend 2x as much money on microcontrollers. I also have not soldered since college and I am relearning it for this project, so it may not be the prettiest (I'm writing this ahead of the assembly, so we'll find out together). I'm using leaded solder because I've heard it's easier to work with as a beginner, and I plan to just do a thorough desk cleaning post-assembly.
 
 ## Parts List
 
@@ -48,7 +48,7 @@ For the most part I followed the very well-done Let's Split [build guide](https:
 
 ## Assembling the Case
 
-I did this first as a test fit because it got here first and I'm impatient. There is a ton of plastic backing that needs to be peeled off, which sounds fun but in reality is frustrating and really messed up my finger nails. 
+I did this first as a test fit because it got here first and I'm impatient. There is a ton of plastic backing that needs to be peeled off, which sounds fun but in reality is frustrating and really messed up my finger nails.
 
 ![A pile of plastic backing](plastic-backing.jpeg "Plastic Backing")
 
@@ -56,13 +56,19 @@ The approach I took was to fasten the standoffs to the top plate and then stack 
 
 ![A collage of the case being assembled](case-assembly.jpeg)
 
-In retrospect I probably should have fastened them to the bottom plate first instead, since I'll have to take the top plate off for assembly, and that will be difficult to do since the standoffs won't be anchored to the bottom plate and will turn freely. Live and learn I suppose.
+In retrospect I probably should have fastened them to the bottom plate first, as I'll have to take the top plate off for assembly. Doing so will be difficult to since the standoffs aren't anchored to the bottom plate and will turn freely. Live and learn I suppose.
 
 ## Flashing
 
-I found out while trying to build the firmware that QMK depends on the `qmk` CLI tool, which can only be installed via Homebrew, which I don't use (I'm a MacPorts guy). Some cursory searching indicated that Homebrew and MacPorts don't play nice when coinstalled, so I decided to avoid going that route. My next thought was to use Docker to do the install, but lo, Docker for Mac can't access the system USB ports without a [tedious workaround](https://dev.to/rubberduck/using-usb-with-docker-for-mac-3fdd), so that idea also went out the window. Bad Idea #3 was to install Linux via Boot Camp---turns out that is also tedious and error-prone (I'm starting to see a trend). Finally, I decided that the answer was to use a solution I haven't reached for in years: an actual VM managed via [Vagrant](https://www.vagrantup.com/). QMK [actually supports this](https://beta.docs.qmk.fm/using-qmk/guides/development-environments/getting_started_vagrant), so it wasn't too bad to get setup. Just install Vagrant and [VirtualBox](https://www.virtualbox.org/), fiddle with the necessary macOS Security & Privacy settings (I had to press "Allow" for apps from Oracle on the main screen, and enable Full Disk Access for iTerm), restart, and we're good to go. We'll also need the [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads) in order for the VM to access the computer's USB ports.
+I found out while trying to build the firmware that QMK depends on the `qmk` CLI tool, which can only be installed via Homebrew, which I don't use (I'm a MacPorts guy). Some cursory searching indicated that Homebrew and MacPorts don't play nice when coinstalled, so I decided to avoid going that route.
 
-The Elite-C v4 comes with the Atmel DFU bootloader preinstalled, so we'll need to target that with our QMK `make` command. The following steps are gleaned from the QMK [Flashing](https://beta.docs.qmk.fm/using-qmk/guides/flashing/flashing#atmel-dfu) and [Split Board](https://beta.docs.qmk.fm/using-qmk/hardware-features/feature_split_keyboard) docs, which you may want to refer to since this may be out of date by the time you read it. 
+My next thought was to use Docker to do the install, but lo, Docker for Mac can't access the system USB ports without a [tedious workaround](https://dev.to/rubberduck/using-usb-with-docker-for-mac-3fdd), so that idea also went out the window.
+
+Bad Idea #3 was to install Linux via Boot Camp---turns out that is also tedious and error-prone (I'm starting to see a trend).
+
+Finally, I decided that the answer was to use a solution I haven't reached for in years: an actual VM managed via [Vagrant](https://www.vagrantup.com/). QMK [actually supports this](https://beta.docs.qmk.fm/using-qmk/guides/development-environments/getting_started_vagrant), so it wasn't too bad to get setup. Just install Vagrant and [VirtualBox](https://www.virtualbox.org/), fiddle with the necessary macOS Security & Privacy settings (I had to press "Allow" for apps from Oracle on the main screen, and enable Full Disk Access for iTerm), restart, and we're good to go. We'll also need the [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads) in order for the VM to access the computer's USB ports.
+
+The Elite-C v4 comes with the Atmel DFU bootloader preinstalled, so we'll need to target that with our QMK `make` command. The following steps are gleaned from the QMK [Flashing](https://beta.docs.qmk.fm/using-qmk/guides/flashing/flashing#atmel-dfu) and [Split Board](https://beta.docs.qmk.fm/using-qmk/hardware-features/feature_split_keyboard) docs.
 
 First we'll need to fork the QMK repo and clone it locally. Then navigate into the top-level directory of the repo, and start the VM:
 
@@ -71,14 +77,14 @@ First we'll need to fork the QMK repo and clone it locally. Then navigate into t
 $ vagrant up
 ```
 
-It will take some time, especially on the first boot, but eventually a blurb from QMK will appear about how to use the VM, meaning the machine has been provisioned. If this is the first time booting the machine, it will likely be necessary to open VirtualBox and manually enable USB on the VM. To do so, first stop it by running:
+It will take some time (especially on the first boot) but eventually a blurb from QMK will appear regarding how to use the VM, meaning the machine has been provisioned. If this is the first time booting the machine, it will be necessary to open VirtualBox and manually enable USB on the VM. To do so, first stop it by running:
 
 ```
 # On host machine in ~/qmk_firmware
 $ vagrant halt
 ```
 
-Then navigate to the halted machine in VirtualBox, and add the USB device by doing the following: right click -> Settings -> Ports -> USB; select USB 3.0; click the `+` icon on the box below; select the ATMEL ATm32U4DFU device; and save the settings. 
+Then navigate to the halted machine in VirtualBox, and add the USB device by doing the following: **right click -> Settings -> Ports -> USB**; select USB 3.0; click the `+` icon on the box below; select the ATMEL ATm32U4DFU device; and save the settings.
 
 ![VirtualBox USB settings screen](usb-settings.png)
 
@@ -118,7 +124,7 @@ To use the Atmel DFU bootloader instead of Caterina, open up `rules.mk` in any t
 $ vim rules.mk
 ```
 
-Then set the value of `BOOTLOADER` to `atmel-dfu`: 
+Then set the value of `BOOTLOADER` to `atmel-dfu`:
 
 ![rules.mk file open in vim with BOOTLOADER set to atmel-dfu](rules-mk.png)
 
@@ -137,7 +143,7 @@ Now on to the main event! QMK uses `make` to build and flash the microcontroller
 make $PROJECT_NAME:$KEYMAP[:$TARGET]
 ```
 
-For now we're just going to flash the copied default keymap---we can come back and customize it later. In order for `EE_HANDS` to work properly, we'll need to designate one of our microcontrollers as the left hand side and the other as the right hand side by targeting `dfu-split-left` and `dfu-split-right`, so choose which one will be which and label the bag or find some other way to keep track of which is which. Then, plug in each microcontroller and run the following commands for the left and right sides respectively (inside the vagrant terminal):
+For now we're just going to flash the copied default keymap---we can come back and customize it later. In order for `EE_HANDS` to work properly, we'll need to designate one of our microcontrollers as the left hand side and the other as the right hand side by targeting `dfu-split-left` and `dfu-split-right`, so choose which one will be which and label the bag or find some other way to distinguish them. Then, plug in each microcontroller and run the following commands for the left and right sides respectively (inside the vagrant terminal):
 
 ```
 # On VM in /vagrant
@@ -149,7 +155,7 @@ vagrant$ make let_split/rev2:jcrane:dfu-split-left
 vagrant$ make let_split/rev2:jcrane:dfu-split-right
 ```
 
-Now when we plug in each controller and navigate to the system keyboard settings, we should see "Lets Split v2" in the drop down. 
+Now when we plug in each controller and navigate to the system keyboard settings, we should see "Lets Split v2" in the drop down.
 
 ![macOS keyboard settings screen](keyboard-settings.png)
 
@@ -162,13 +168,15 @@ Success!
 To be completely honest, I totally forgot to take any pictures during this part of the process. I was streaming the build and it just sort of slipped my mind. That said, the steps in the guide linked above are very thorough and anything I did would likely be redundant. For a short overview of the steps:
 
 1. Solder on the diodes and TRRS jacks (make sure to do it on the right side of the board for each half, they should be mirrored).
-2. Solder the jumpers below the TRRS jacks into the proper configuration---this is one area in which I think the guide could use some clarification. It says to solder the jumpers in the following configuration and to do both PCBs the same: 
+2. Solder the jumpers below the TRRS jacks into the proper configuration---this is one area in which I think the guide could use some clarification. It says to solder the jumpers in the following configuration and to do both PCBs the same:
+
 ```
 VCC [x]     [ ] VCC
     [x]     [x]
 GND [ ]     [x] GND
 ```
-For whatever reason I found this very confusing and had to seek out some pictures for clarification, but in essence: when looking at the bottom of either PCB (that is the side with the TRRS jack on it) when the TRRS jack is facing upwards the jumpers should look like the above diagram, they should NOT be mirrored. If that explanation is still subpar, just refer to this image, which has the jumpers both soldered in the correct configuration:
+
+For whatever reason I found this very confusing and had to seek out some pictures for clarification, but in essence: when looking at the bottom of either PCB (that is the side with the TRRS jack on it) when the TRRS jack is facing upwards the jumpers should look like the above diagram---they should **NOT** be mirrored. If that explanation is still subpar, just refer to this image, which has the jumpers both soldered in the correct configuration:
 
 ![Correct jumper configuration](finished.jpeg)
 
@@ -178,7 +186,9 @@ For whatever reason I found this very confusing and had to seek out some picture
 
 ## Adding RGB Lighting
 
-This is one place where the guide is outdated. It suggests running the lighting signal through the TRRS cable, but this would mean only one half could run the lighting. To support either half acting as primary with lighting, I followed the [instructions](https://beta.docs.qmk.fm/using-qmk/hardware-features/feature_split_keyboard#additional-resources) from QMK. Basically, attach VCC and GND on the board to the corresponding pins on the LED strip, and then connect the TX0 pin on each microcontroller to the DIN pin on the LED strip. If you split the strip into multiple parts, just connect the VCC and GND from piece to piece, and DO to DIN.
+This is one place where the guide is outdated. It suggests running the lighting signal through the TRRS cable, but this would mean only one half could run the lighting.
+
+To support either half acting as primary with lighting, I followed the [instructions](https://beta.docs.qmk.fm/using-qmk/hardware-features/feature_split_keyboard#additional-resources) from QMK. Basically, attach VCC and GND on the board to the corresponding pins on the LED strip, and then connect the TX0 pin on each microcontroller to the DIN pin on the LED strip. If you split the strip into multiple parts, just connect the VCC and GND from piece to piece, and DO to DIN (see the picture in the previous section for a visual explanation).
 
 In order to support split RGB lighting, we'll need to make one more tweak to the firmware and reflash. To do so, we'll need to add a few more defines in `config.h`:
 
@@ -195,7 +205,7 @@ $ vim config.h
 #define RGBLIGHT_ANIMATIONS
 ```
 
-The numbers indicate the number of LEDs on each half. I used 6 LEDs on each, hence the `{ 6, 6 }`. It's important to do this before closing up the case, since it causes the two halves of the keyboard to be unable to communicate with one another until it is set on both halves. Since the default keymap requires both halves of the keyboard to reach the `RESET` key, this is an inconvenient side effect once the case is closed. 
+The numbers indicate the number of LEDs on each half. I used 6 LEDs on each, hence the `{ 6, 6 }`. It's important to do this before closing up the case, since it causes the two halves of the keyboard to be unable to communicate with one another until it is set on both halves. Since the default keymap requires both halves of the keyboard to reach the `RESET` key, this is an inconvenient side effect once the case is closed.
 
 We'll also need to set `RGBLIGHT_ENABLE` to `yes` in `rules.mk`.
 
@@ -212,10 +222,10 @@ As you can see, both sides are capable of acting as the primary with illuminatio
 
 ## Retrospective
 
-I'm typing this conclusion on my ErgoDox, which tells you about how well my replacement mission went. The Let's Split did not turn out to be my keyboard to end all keyboards, or even my new daily driver. That's not to say that I am unhappy with how it turned out, as quite the contrary is true. Rather, I simply find the typing experience to be inferior to that of the ErgoDox for a number of reasons.
+I'm typing this conclusion on my ErgoDox, which tells you about how well my replacement mission went. The Let's Split did not turn out to be my keyboard to end all keyboards, or even my new daily driver. That's not to say that I am unhappy with how it turned out, quite the contrary. Rather, I simply find the typing experience to be inferior to that of the ErgoDox for a number of reasons.
 
 My primary complaint is that the layout is significantly less comfortable for my (somewhat large) hands. My fingers vary fairly drastically in length, so the transition from an ergo layout (columns are staggered) to an ortholinear layout (columns are aligned) was rather jarring. I found the lower middle finger keys and upper pinky keys especially problematic. Additionally, having all the thumb keys huddled under my palms instead of offset gave me hand cramps by the end of the workday that I spent testing the board.
 
-Another factor is that the 68g Boba U4 switches are the heaviest I've ever used---I got a switch tester and really liked the 70g [Gateron Aliaz](https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile) switches, but was unable to find them in stock anywhere, so bought the Bobas as a switch that would potentially offer a similar feel. I think that I probably should have gone with the 62g variant, since they feel quite a bit heavier than the Aliaz 70g to my hand (probably due to a significantly larger tactile bump). I decided to lube the switches prior to my build to see if this reduced their perceived heaviness, which it did to some degree, but they are still a very tactile switch. I'm beginning to think that I'm just not that into tactile switches, and I'll probably try some linear switches for my next build.
+Another factor is that the 68g Boba U4 switches are the heaviest I've ever used---I got a switch tester and really liked the 70g [Gateron Aliaz](https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile) switches, but was unable to find them in stock anywhere. I bought the Bobas as a switch that would potentially offer a similar feel. I think that I should have gone with the 62g variant, since they feel quite a bit heavier than the Aliaz 70g to my hand (probably due to a significantly larger tactile bump). I decided to lube the switches prior to my build to see if this reduced their perceived heaviness, which it did to some degree, but they are still a very tactile switch. I'm beginning to think that I'm just not that into tactile switches, and I'll probably try some linear switches for my next build.
 
 All in all, I had a lot of fun building the board and I'm glad that I did it. I'm happy with how it turned out, and even though I won't be using it as a daily driver, I think it could serve well as a portable board. It is very quiet, very small, and looks cool as hell (certified bias-free opinion). It has also taught me a lot about what I want in my next board---I'm thinking a 36 key ergo board like the [Akufu36](https://www.thingiverse.com/thing:4593582) or [Arch-36](https://github.com/obosob/arch-36-case).
